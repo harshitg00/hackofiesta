@@ -1,0 +1,67 @@
+.home {
+
+    &-section{
+        position: relative;
+    
+        // width: 70%;
+        @include marginCenter;
+        // text-align: center;
+    }
+    
+    &__container {
+        font-family: Evolve Sans Evo;
+        padding-top: 6rem;
+        width: auto;
+    
+    
+        img{
+        @include marginCenter;
+        height: 6rem;
+        width: 6rem;
+        clip-path: polygon(50% 25%,0 100%,100% 100%);
+        }
+    
+        &--text{
+        // background-color: rgb(168, 241, 136);
+        width: 70%;
+        @include marginCenter;
+    
+        h1{
+            text-align: center;
+            font-size: 5rem;
+            font-weight: 100;
+            text-transform: uppercase;
+            position: relative;
+        }
+    
+        p{
+            width: 80%;
+            // background-color: rgb(247, 151, 151);
+            margin-top: 1rem;
+            padding: 0.3rem 0;
+            text-align: right;
+        }
+        }
+    
+    }
+    
+    &__button {
+        margin-top: 2.5rem;
+        text-align: center;
+        &>*{
+        margin: 0rem 2rem ;
+        }
+    }
+    
+    &__scroll {
+        
+        img {
+        height: 2.5rem;
+        width: 2rem;
+        border-radius: 35%;
+        margin: 0 auto;
+        margin-top: 7rem;
+        }
+    }
+    }
+    

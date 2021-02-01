@@ -1,0 +1,32 @@
+.prize {
+
+    &--section {
+        background-color: $color-primary-white;
+        margin-top: 7rem;
+        text-align: center;
+        
+        position: relative;
+    }
+
+    &__container {
+        width: 70%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include marginCenter;
+        margin-top: 5rem;
+    }
+
+    &__background {
+        position: absolute;
+        height: 50rem;
+        width: 50rem;
+        top: -20%;
+
+        img{
+            height: 50rem;
+            width: 50rem;
+        }
+    }
+
+}

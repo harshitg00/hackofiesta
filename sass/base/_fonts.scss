@@ -1,0 +1,34 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+@font-face {
+    font-family: Evolve Sans Evo;
+    // src: url("./Evolve/MADE\ Evolve\ Sans\ Bold\ \(PERSONAL\ USE\).otf");
+
+    src: url("./../../css/Evolve/MADE\ Evolve\ Sans\ Bold\ EVO\ \(PERSONAL\ USE\).otf");
+    // src: url("./../../css/stargaze/Stargaze\ Stencil.otf");
+}
+
+@font-face {
+    font-family: Evolve Sans;
+
+    src: url("./Evolve/MADE\ Evolve\ Sans\ Bold\ \(PERSONAL\ USE\).otf");
+    // src: url("./../../css/stargaze/Stargaze\ Stencil.otf");
+}
+
+
+@font-face {
+    font-family: Stargaze Stencil;
+
+    // src: url("./../../css/stargaze/Stargaze\ Regular.otf");
+    src: url("./../../css/stargaze/Stargaze\ Stencil.otf");
+}
+
+
+@font-face {
+    font-family: Stargaze;
+
+    src: url("./../../css/stargaze/Stargaze\ Regular.otf");
+    // src: url("./../../css/stargaze/Stargaze\ Stencil.otf");
+}

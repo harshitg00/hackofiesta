@@ -1,0 +1,41 @@
+.navigation {
+    position: fixed;
+    top: 20%;
+    left: 2%;
+    ul{
+        li {
+            list-style: none;
+
+            a{
+                font-family: Stargaze Regular;
+                font-weight: 100;
+                font-size: 0.9rem;
+                color: $color-white;
+                outline: none;
+                text-decoration: none;
+                transition: all 0.5s;
+                
+
+                &:hover {
+                    color: $color-blue-light;
+                    
+                }
+            }
+
+        }
+    }
+
+    &__nav{
+        // background-color: rgb(155, 191, 84);
+
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        width: 55%;
+        justify-content: space-around;
+    }
+    
+}
