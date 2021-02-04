@@ -1,3 +1,56 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the footer of the site/application.
-// -----------------------------------------------------------------------------
+.footer {
+
+    &--section{
+        margin-top: 5rem;
+        background-color: $color-primary-black;
+    }
+    &__container{
+        width: 70%;
+        background-color: rgb(163, 235, 152);
+        @include marginCenter;
+        padding-top: 2.5rem;
+    }
+
+    &__img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h1{
+            text-transform: uppercase;
+            font-family: "Evolve Sans Evo";
+        }
+        
+        & > * {
+            margin: 0;
+        }
+        img{
+            height: 4rem;
+            width: 5rem;
+            clip-path: polygon(50% 0%,0 100%,100% 100%);
+            
+        }
+    }
+
+    &__bottom{
+        display: flex;
+
+        &--address{
+            flex-basis: 50%;
+            background-color: rgb(175, 253, 127);
+        }
+
+        &--text{    
+            flex-basis: 50%;
+            background-color: rgb(253, 127, 127);
+            h3{        
+            }
+        }
+    }
+    &__links{
+        flex: 1;
+    }
+    
+}
+
+
+

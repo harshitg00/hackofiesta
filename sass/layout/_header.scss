@@ -2,9 +2,10 @@
 
     &-section{
         position: relative;
-    
+        // background-color: $color-background;
         // width: 70%;
         @include marginCenter;
+        height: 100vh;
         // text-align: center;
     }
     
@@ -27,11 +28,19 @@
         @include marginCenter;
     
         h1{
+            color:var(--color-heading);
+            // color: #1D2026;
             text-align: center;
             font-size: 5rem;
             font-weight: 100;
             text-transform: uppercase;
             position: relative;
+            
+            text-shadow: 2px 2px 100px var(--color-textShadow);
+            span{
+                text-shadow: 1px 1px 100px #ffffff;
+            }
+            
         }
     
         p{
@@ -46,21 +55,31 @@
     }
     
     &__button {
-        margin-top: 2.5rem;
-        text-align: center;
+        width: 50%;
+        @include marginCenter;
+        // background-color: rgb(173, 255, 222);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        // margin-top: 1.5rem;
+        // text-align: center;
         &>*{
-        margin: 0rem 2rem ;
+        margin: 1rem 2rem ;
         }
     }
     
     &__scroll {
-        
-        img {
+        font-family: 'FontAwesome';
+        font-style: normal !important;
+        color: var(--color-scroll);
         height: 2.5rem;
-        width: 2rem;
-        border-radius: 35%;
-        margin: 0 auto;
-        margin-top: 7rem;
+        width: 2.5rem;
+        
+        i {
+        // border-radius: 35%;
+        // margin: 0 auto;
+        @include centerAlign;
+        top: 90%;
         }
     }
     }

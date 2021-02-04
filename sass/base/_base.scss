@@ -26,7 +26,7 @@
 
 html {
     // This defines what 1rem is
-    font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+    font-size: 125%; //1 rem = 10px; 10px/16px = 62.5%
     
 
     // @include respond(tab-land) { // width < 1200?
@@ -42,15 +42,27 @@ html {
     // }
 
 
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 body {
     box-sizing: border-box;
     font-family: 'Assistant', sans-serif;
+    background-color: var(--color-background) !important;
 }
 
 ul{
     text-decoration: none;
 }
+
+html.transition,
+html.transition *,
+html.transition *:before,
+html.transition *:after {
+    transition: all 750ms !important;
+    transition-delay: 0s !important;
+}
+
+
+
 
