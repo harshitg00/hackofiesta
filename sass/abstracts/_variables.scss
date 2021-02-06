@@ -21,6 +21,12 @@ $color-black:#000;
     --color-textShadow:#fff;
     
     --color-textShadow-2:rgba(255, 255, 255, 0.204);
+    --color-speaker:#ffffff;
+
+    
+    label:after {
+        background-image: url("./../../img/moon.svg");
+    }
 }
 
 // html[data-theme='dark'] {
@@ -34,4 +40,11 @@ html[data-theme='light'] {
     --color-textShadow:#1d2026c1;
     
     --color-textShadow-2:#1d202657;
+    --color-speaker:#1d2026;
+
+        
+    label:after {
+        background-image: url("./../../img/sun.svg");
+    }
+
 }

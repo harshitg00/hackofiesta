@@ -6,7 +6,6 @@
     }
     &__container{
         width: 70%;
-        background-color: rgb(163, 235, 152);
         @include marginCenter;
         padding-top: 2.5rem;
     }
@@ -36,18 +35,64 @@
 
         &--address{
             flex-basis: 50%;
-            background-color: rgb(175, 253, 127);
+            // background-color: rgb(175, 253, 127);
+            padding: 2rem 0 0 2rem;
         }
 
         &--text{    
             flex-basis: 50%;
-            background-color: rgb(253, 127, 127);
-            h3{        
+            // background-color: rgb(253, 127, 127);
+            display: flex;
+            flex-direction: column;
+            // justify-content: space-evenly;
+
+            color: white;
+            h3{       
+                text-transform: capitalize;
+            }
+
+            p{
+                font-size: 0.7rem;
+                font-weight: 100;
+                width: 70%;
+            }
+        }
+
+        &--links{
+            display: flex;
+            align-items: center;
+            margin: 0.2rem;
+            width: 60%;
+            height: 25%;
+            p{
+                margin-left:1rem;
+                margin-top: 3%;
+                
             }
         }
     }
     &__links{
-        flex: 1;
+        align-self: baseline;
+
+        display: flex;
+        // background-color: rgb(123, 107, 250);
+        width: 50%;
+        justify-content: space-around;
+        // @include marginCenter;
+        // margin-top: 1rem;
+
+        a{
+            // background-color: rgba(255, 255, 255, 0.503);
+            width: 1.5rem;
+            text-align: center;
+            transition: all 0.4s;
+            border-radius: 3px;
+
+            &:hover{
+                background-color: #fff;
+                color: $color-primary-black;
+            }
+        }
     }
     
 }

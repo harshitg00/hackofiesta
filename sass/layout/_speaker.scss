@@ -3,7 +3,7 @@
 
     &--section {
         text-align: center;
-        background-color: $color-primary-black;
+        // background-color: $color-primary-black;
     }
 
     &__container {
@@ -59,6 +59,14 @@
     &__details{
         text-align: left;
         // background-color: rgb(113, 202, 247);
+        h3{
+            font-size: 1rem;    
+            color: var(--color-speaker) !important;
+        }
+        h4{
+            color: var(--color-speaker) !important;
+            font-size: 0.6rem;
+        }
 
     }
 

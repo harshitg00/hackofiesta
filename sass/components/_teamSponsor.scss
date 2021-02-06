@@ -8,8 +8,6 @@
 
     &__team,&__sponsors{
         position: relative;
-        
-        background-color: rgb(193, 236, 158);
         margin: 3rem;
         display: flex;
         justify-content: space-between;
@@ -17,7 +15,10 @@
 
         &--text{
             flex-basis: 70%;
-            // background-color: rgb(135, 147, 226);
+
+            p{
+                color: white;
+            }
             padding: 2rem;
             & > * {
                 margin: 0;
@@ -40,7 +41,7 @@
 
             &:hover{
                 border: 5px solid rgba(46, 107, 209, 0.5);
-                box-shadow: 3px 3px 15px rgba(255, 255, 255, 0.66)
+                box-shadow: 2px 0px 15px rgba(255, 255, 255, 0.66)
             }
             
             
@@ -58,5 +59,30 @@
             }
         }
     }
+
+    
+    &__team{
+        background-color: rgb(178, 74, 252);
+
+        a{
+            border: 7px solid rgba(178, 74, 252, 0.5) ;
+            transition: all 0.4s;
+
+            &:hover{
+                border: 5px solid rgba(178, 74, 252, 0.5);
+                box-shadow: 2px 0px 15px rgba(255, 255, 255, 0.66)
+            }
+        }
+
+    }
+
+    
+    &__sponsors{
+        background-color: #3E8FE0;
+    }
+
+
+
+
 }
 

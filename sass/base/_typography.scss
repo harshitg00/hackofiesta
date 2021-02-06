@@ -1,8 +1,9 @@
 .cta-button {
 
     &-hero {
-        background-color: $color-primary-blue;
-        background-color:#007eff;
+        // background-color:#00ACC1;
+        background: rgb(39,142,165);
+background: linear-gradient(45deg, rgba(39,142,165,1) 0%, rgba(40,199,250,1) 9%, rgba(40,161,193,1) 9%, rgba(40,166,201,1) 20%, rgba(40,199,250,1) 20%, rgba(40,178,219,1) 29%, rgba(40,173,211,1) 30%, rgba(39,152,179,1) 88%, rgba(40,199,250,1) 88%);
         font-size: 1.5rem;
         padding: 0.5rem 2rem;
         color: $color-white;
@@ -56,7 +57,22 @@
     box-sizing: border-box;
     position: fixed;
     top: 85%;
-    left: 93%;
+    left: 95%;
+
+
+    &__container{
+
+        input{
+            position: relative;
+        }
+    }
+    
+    &__sun{
+        color:  #FDB813;
+    }
+    &__moon{
+        color: #F5F3CE;
+    }
 }
 
 
@@ -68,9 +84,10 @@ input[type=checkbox]{
 }
 
 label {
+    z-index: 1;
 	cursor: pointer;
 	text-indent: -9999px;
-	width: 3.5rem;
+	width: 1.8rem;
 	height: 1.8rem;
 	background: grey;
 	display: block;
@@ -79,6 +96,8 @@ label {
 }
 
 label:after {
+    
+    z-index: 10;
 	content: '';
 	position: absolute;
 	top: 5px;
@@ -87,7 +106,10 @@ label:after {
 	height: 1.3rem;
 	background: #fff;
 	border-radius: 90px;
-	transition: 0.5s;
+    transition: 0.5s;
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
 }
 
 input:checked + label {
@@ -97,7 +119,8 @@ input:checked + label {
 
 input:checked + label:after {
 	left: calc(100% - 5px);
-	transform: translateX(-100%);
+    transform: translateX(-100%);
+    // transform:scale(0.7) ;
 }
 
 label:active:after {
