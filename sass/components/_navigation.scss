@@ -1,41 +1,105 @@
-.navigation {
-    position: fixed;
-    top: 20%;
-    left: 2%;
-    ul{
-        li {
-            list-style: none;
+.navigation{
 
+
+    &__nav{
+        position: fixed;
+        z-index: 9999999;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        // background-color:var(--color-scroll);
+        
+        background-color:$color-primary-black;
+        clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+
+        ul{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 3rem;
+            padding: 0 1rem;
+        }
+    }   
+
+    &__item{
+        list-style: none;
+        align-self: center;
+        transition: all 1s;
+
+        a{        
+            // background-color: rgb(171, 231, 162);
+            text-decoration: none;
+            animation: widthInc 0.6s forwards;
+
+            // opacity: 0;
+            width: 0%;
+            text-transform: uppercase;
+            font-family: Evolve Sans;
+        }
+        
+
+        &:hover{
             a{
-                font-family: Stargaze Regular;
-                font-weight: 100;
-                font-size: 0.9rem;
-                color: $color-white;
-                outline: none;
-                text-decoration: none;
-                transition: all 0.5s;
-                
+                width: 100%;
+                opacity: 1;
+            }
+        }
 
-                &:hover {
-                    color: $color-blue-light;
-                    
+        &--home {
+            a{
+                font-size: 2rem;
+                fill: rgb(255, 255, 255);
+                img{
+                    height: 2.5rem;
+                    width: 2.5rem;
                 }
             }
 
         }
     }
 
-    &__nav{
-        // background-color: rgb(155, 191, 84);
+    // &__link{
+    //     &:hover{
+    //         opacity: 1;
+    //     }
+    // }
+}
 
+@keyframes widthInc{
+    0%{
+        width: 0%;
     }
+    100%{
+        width: 100%;
+    }
+}
 
-    &__list {
-        display: flex;
-        flex-direction: column;
-        height: 70vh;
-        width: 55%;
-        justify-content: space-around;
+
+$link:#e5eeff;
+
+.navigation__item{
+    a {
+        position: relative;
+        overflow: hidden;
+        text-decoration: none;
+        color: $link;
+        &::after {
+            content: "";
+            background: rgba($link, 0.25);
+            position: absolute;
+            left: 12px;
+            bottom: -6px;
+            width: calc(100% - 8px);
+            height: calc(100% - 18px);
+            z-index: -1;
+            transition: 0.35s cubic-bezier(0.25, 0.1, 0, 2.05);
+        }
+        &:hover:after {
+            left: 0;
+            bottom: -2px;
+            width: 100%;
+            height: 100%;
+        }
     }
-    
 }

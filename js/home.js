@@ -135,3 +135,17 @@ function toggleAccordion() {
 }
 
 items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+
+
+const wheel1 = document.getElementById("wheel-1");
+const wheel2 = document.getElementById("wheel-2");
+const wheel3 = document.getElementById("wheel-3");
+
+gsap.to([wheel1, wheel2, wheel3], 1, {
+  transformOrigin: "center center",
+  rotation: 360,
+  ease: Power0.easeOut,
+  repeat: -1
+});
