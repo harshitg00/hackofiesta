@@ -3,7 +3,7 @@
 
     &--section {
         text-align: center;
-        // background-color: $color-primary-black;
+        background-color: $color-primary-black;
     }
 
     &__container {
@@ -14,27 +14,28 @@
 
         display: flex;
         flex-wrap: wrap;
-        // justify-content: space-evenly;
+        justify-content: space-evenly;
 
         &--card {
             // background-color: #9f56ec;
-            width: 11rem;
-            height: 5rem;
-            margin: 1rem;
+            width: 15.5rem;
+            height: 8rem;
+            margin: 0.7rem;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
+            margin-bottom: 1.1rem;
 
 
             h3{
-                margin: -0.3rem 0 -0.5rem 0;
+                // margin: -0.3rem 0 -0.5rem 0;
                 font-size: 0.8rem;
                 // background-color: rgb(113, 247, 151);
             }
 
             h4{
                 
-                margin: -0.3rem 0 0.1rem 0;
+                // margin: -0.3rem 0 0.1rem 0;
                 font-size: 0.5rem;
             }
         }
@@ -45,27 +46,32 @@
     &__img{
         // background-color: rgb(223, 253, 174);
         
-        height: 4rem;
-        width: 4rem;
+        height: 6rem;
+        width: 6rem;
         
 
         img{
             border-radius:50% ;
-            height: 4rem;
-            width: 4rem;
+            height: 6rem;
+            width: 6rem;
+            background-color: rgb(247, 191, 119);
         }
     }
 
     &__details{
         text-align: left;
         // background-color: rgb(113, 202, 247);
+        height: 75%;
         h3{
-            font-size: 1rem;    
-            color: var(--color-speaker) !important;
+            font-size: 1.1rem;    
+            // color: var(--color-speaker) !important;
+            color: $color-white !important;
         }
         h4{
-            color: var(--color-speaker) !important;
-            font-size: 0.6rem;
+            // color: var(--color-speaker) !important;
+            color: $color-white !important;
+            font-size: 0.7rem;
+            margin: -0.2rem 0 0 0 ;
         }
 
     }
@@ -84,6 +90,6 @@
         width: 1rem;
         background-color: #fff;
         border-radius: 50%;
-        margin: 0 0.5rem 0 0 ;
+        margin: 0.1rem 0.5rem 0 0 ;
     }
 }

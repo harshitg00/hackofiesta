@@ -2,31 +2,39 @@
 
     &--section {
         background-color: #e5eeff;
-        margin-top: 7rem;
+        margin-top: 5rem;
         text-align: center;
+        padding-bottom: 5rem;
         
         position: relative;
     }
 
     &__container {
-        width: 70%;
+        width: 90%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         @include marginCenter;
-        margin-top: 5rem;
+        margin-top: 2rem;
     }
 
-    &__background {
-        position: absolute;
-        height: 50rem;
-        width: 50rem;
-        top: -20%;
+    // &__background {
+    //     position: absolute;
+    //     height: 50rem;
+    //     width: 50rem;
+    //     top: -20%;
 
+    //     img{
+    //         height: 50rem;
+    //         width: 50rem;
+    //     }
+    // }
+
+    &__card{
         img{
-            height: 50rem;
-            width: 50rem;
+            // @include centerAlign;
+            // height: 10rem;
+            // width: 10rem;
         }
     }
-
 }

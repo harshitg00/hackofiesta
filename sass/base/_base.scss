@@ -42,7 +42,7 @@ html {
     // }
 
 
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 body {
@@ -88,3 +88,6 @@ html.transition *:after {
   }
 
 
+h3,h4{
+  margin: 0;
+}
