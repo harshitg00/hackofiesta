@@ -22,7 +22,8 @@
   'layout/header',
   'layout/footer',
   'layout/prize',
-  'layout/speaker';
+  'layout/speaker',
+  'layout/faq';
 
 // 5. Components
 @import
@@ -33,7 +34,8 @@
 
 // 6. Page-specific styles
 @import
-  'pages/home';
+  'pages/home',
+  'pages/responsive';
 
 // 7. Themes
 @import
