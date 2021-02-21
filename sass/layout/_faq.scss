@@ -17,7 +17,13 @@ $blue: #03b5d2;
     &__container {
         margin: 0 auto;
         padding: 4rem;
-        width: 48rem;
+        width: 70%;
+
+        @include marginCenter;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 }
 
@@ -25,7 +31,7 @@ $blue: #03b5d2;
   .accordion-item {
     border-bottom: 1px solid $lightgray;
     button[aria-expanded='true'] {
-      border-bottom: 1px solid $blue;
+      border-bottom: 1px solid $blue;   
     }
   }
   button {
@@ -33,7 +39,7 @@ $blue: #03b5d2;
     display: block;
     text-align: left;
     width: 100%;
-    padding: 1em 0;
+    padding: 1rem 2rem 1rem 0rem;
     color: $text;
     font-size: 1.15rem;
     font-weight: 400;
@@ -48,9 +54,6 @@ $blue: #03b5d2;
         color: $blue;
         border: 1px solid $blue;
       }
-    }
-    .accordion-title {
-      padding: 1em 1.5em 1em 0;
     }
     .icon {
       display: inline-block;
@@ -92,7 +95,7 @@ $blue: #03b5d2;
     }
     + .accordion-content {
       opacity: 1;
-      max-height: 9em;
+      max-height: 13em;
       transition: all 200ms linear;
       will-change: opacity, max-height;
     }
@@ -107,6 +110,7 @@ $blue: #03b5d2;
       font-size: 1rem;
       font-weight: 300;
       margin: 2em 0;
+      color: white;
     }
   }
 }

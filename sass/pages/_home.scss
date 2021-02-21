@@ -8,7 +8,7 @@
 
 &-section {
     position: relative;
-    height: 100vh;
+    height: auto;
 
     clip-path: polygon(0% 0%,100% 10%,100% 100%,0% 90%);
     // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -38,11 +38,12 @@
 
     &--text {
     width: 80%;
-    margin:0 2rem ;
+    margin:0rem 0rem 4rem 2rem ;
     text-align: center;
     font-family: Evolve Sans;
     font-size: 1.2rem;
     font-weight: 100;
+    
     }
 }
 
