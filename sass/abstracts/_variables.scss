@@ -27,8 +27,9 @@ $color-primary-background:#e5eeff;
     --color-navbg:#e5eeff;
 
     
-    label:after {
-        background-image: url("./../../img/moon.svg");
+    .label__dark:after {
+        background-image: url("./../../img/sun.svg");
+        // background-size: ;
     }
 }
 
@@ -47,8 +48,8 @@ html[data-theme='light'] {
     
 
         
-    label:after {
-        background-image: url("./../../img/sun.svg");
+    .label__dark:after {
+        background-image: url("./../../img/moon.svg");
     }
 
 }
