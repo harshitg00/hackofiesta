@@ -112,10 +112,11 @@
     }
     .teamSponsor{
         &--section{
-            width: 100%;
+            width: 100vw;
         }
 
         &__team{
+            margin: 0;
             &--img{
                 height: 8rem;
                 width: 20vw;
@@ -133,6 +134,7 @@
             }
         }
         &__sponsors{
+            margin: 2rem 0rem;
             &--img{
                 height: 8rem;
                 width: 20vw;
@@ -185,6 +187,18 @@
                 margin:unset;
                 font-size: 1.1rem;
             }
+        }
+    }
+    .engine__img{
+        svg{
+            height: 100px;
+            width: 100px;
+            transform: translateY(3rem);
+        }
+    }
+    .faq{
+        &__container {
+            padding: unset;
         }
     }
 }
