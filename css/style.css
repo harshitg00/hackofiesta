@@ -201,7 +201,7 @@ h3, h4 {
 
 .home__container {
   font-family: Evolve Sans Evo;
-  padding-top: 6rem;
+  padding-top: 5rem;
   width: auto; }
   .home__container img {
     margin: 0 auto;
@@ -248,7 +248,22 @@ h3, h4 {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 90%; }
+    top: 93%;
+    animation-name: scrollBottom;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards; }
+
+@keyframes scrollBottom {
+  0% {
+    opacity: 0; }
+  10% {
+    transform: translate(-50%, -30%);
+    opacity: 1; }
+  100% {
+    transform: translate(-50%, 2%);
+    opacity: 0; } }
 
 .new_footer_area {
   background: #e5eeff; }
@@ -282,7 +297,7 @@ h3, h4 {
 
 .btn_get_two:hover {
   background: transparent;
-  color: #5e2ced; }
+  color: #5AA2E5; }
 
 .btn_get:hover {
   color: #fff;
@@ -296,7 +311,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   outline: none; }
 
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
-  color: #5e2ced; }
+  color: #5AA2E5; }
 
 .new_footer_top .f_widget.about-widget .f_list li {
   margin-bottom: 11px; }
@@ -315,7 +330,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   height: 44px;
   line-height: 43px;
   background: transparent;
-  border: 1px solid #e2e2eb;
+  border: 1px solid #b8b8bb;
   font-size: 24px; }
 
 .f_social_icon a {
@@ -348,17 +363,17 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .btn_get_two {
   -webkit-box-shadow: none;
   box-shadow: none;
-  background: #5e2ced;
-  border-color: #5e2ced;
+  background: #5AA2E5;
+  border-color: #5AA2E5;
   color: #fff; }
 
 .btn_get_two:hover {
   background: transparent;
-  color: #5e2ced; }
+  color: #5AA2E5; }
 
 .new_footer_top .f_social_icon a:hover {
-  background: #5e2ced;
-  border-color: #5e2ced;
+  background: #5AA2E5;
+  border-color: #5AA2E5;
   color: white; }
 
 .new_footer_top .f_social_icon a + a {
@@ -1021,7 +1036,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   width: 100vw;
   background-color: #e5eeff;
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   text-align: center; }
   .about-section h1 {
     margin-top: 4rem;
