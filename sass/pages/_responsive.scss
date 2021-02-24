@@ -1,207 +1,348 @@
-@media only screen and (max-width:800px) {
-    html{
-        font-size: 75%;
-        width: 100%;
-    }
-    body{
-        width: 100%;
-        height: 100%;
-        overflow-x: hidden;
-    }
-    div[class$="__container"]{
-        margin-top: 2rem;
-    }
-    .home {
-        &__container {
-            padding-top: 3rem;
-            h1{
-                text-align: center;
-                font-size: 3.5rem;
-            }
-            
-            &--text{
-                p{
-                    font-size: 1.3rem;
-                    width: 80%;
-                    margin: -1rem 0rem 0rem 3rem;
-                    padding: 0 0 0;
-                    text-align: right;
-                }
-            }
-        }
-        &__button {
-            width: 50%;
-            position: absolute;
-            bottom: 20vh;
-            left: 50%;
-            transform: translateX(-50%);
-            &>*{
-                margin: 0.5rem 1rem ;
-            }
-        }
-        &__scroll {
-            i {
-                width: 1rem;
-                top:95%;
-            }
-        }
-    }
-    .hero{
-        // display: none;
-        width: 70vw;
-        left:10vw;
-        top: 30vh;
-    }
-    .about {
-        &-section{
-            clip-path: unset;
-            height: auto;
-            h1{
-                margin-top: 4rem;
-            }
-        }
-        &__background{
-            display: none;
-        }
-        &__container{
-            &--text {
-                width: 100%;
-                margin: 0 0rem;
-                text-align: center;
-                font-family: Evolve Sans;
-                font-size: 1.2rem;
-                font-weight: unset;
-                line-height: 150%;
-                margin-bottom: 4rem;
-            }
-        }
-    }
-    .theme {
-        &__container{
-            width: 100vw;
-        }
-        &--card {
-            margin-bottom: 2rem;
-        }
-    }
-    .heading-secondary{
-        h1{
-            // margin-top: 4rem;
-        }
-    }
-    .cta-button {
-        &-hero {
-            padding: 0.4rem 2rem;
-            font-size: 1.6rem;
-        }
-    }
-    .darktheme{
-        position: absolute;
-        top: unset;
-        bottom: 10%;
-        left: 85%;
-    }
-    label {
+.nav-respo{
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 75%;
+    width: 100%;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+  div[class$="__container"] {
+    margin-top: 2rem;
+  }
+  .navigation {
+    display: none;
+  }
+  .darktheme {
+    &__container {
+      > label {
         width: 2rem;
         height: 2rem;
-
-    }
-    label:after {
+      }
+      > label:after {
         width: 1.3rem;
         height: 1.3rem;
+      }
     }
-    .teamSponsor{
-        &--section{
-            width: 100vw;
-        }
+  }
+  .home {
+    &__container {
+      padding-top: 3rem;
+      h1 {
+        text-align: center;
+        font-size: 3.5rem;
+      }
 
-        &__team{
-            margin: 0;
-            &--img{
-                height: 8rem;
-                width: 20vw;
-            }
-            &--text{
-                padding: 1.2rem;
-                height: 8rem;
-                >*{
-                    margin-bottom: 0rem;
-                }
-                p{
-                    position: relative;
-                    line-height: 100%;
-                }
-            }
+      &--text {
+        p {
+          font-size: 1.3rem;
+          width: 80%;
+          margin: -1rem 0rem 0rem 3rem;
+          padding: 0 0 0;
+          text-align: right;
         }
-        &__sponsors{
-            margin: 2rem 0rem;
-            &--img{
-                height: 8rem;
-                width: 20vw;
+      }
+    }
+    &__button {
+      width: 50%;
+      position: absolute;
+      bottom: 20vh;
+      left: 50%;
+      transform: translateX(-50%);
+      & > * {
+        margin: 0.5rem 1rem;
+      }
+    }
+    &__scroll {
+      i {
+        width: 1rem;
+        top: 95%;
+      }
+    }
+  }
+  .hero {
+    // display: none;
+    width: 70vw;
+    left: 10vw;
+    top: 30vh;
+  }
+  .about {
+    &-section {
+      clip-path: unset;
+      height: auto;
+      h1 {
+        margin-top: 4rem;
+      }
+    }
+    &__background {
+      display: none;
+    }
+    &__container {
+      &--text {
+        width: 100%;
+        margin: 0 0rem;
+        text-align: center;
+        font-family: Evolve Sans;
+        font-size: 1.2rem;
+        font-weight: unset;
+        line-height: 150%;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+  .theme {
+    &__container {
+      width: 100vw;
+    }
+    &--card {
+      margin-bottom: 2rem;
+    }
+  }
+  .heading-secondary {
+    h1 {
+      // margin-top: 4rem;
+    }
+  }
+  .cta-button {
+    &-hero {
+      padding: 0.4rem 2rem;
+      font-size: 1.6rem;
+    }
+  }
+  .darktheme {
+    position: absolute;
+    top: unset;
+    bottom: 10%;
+    left: 85%;
+  }
 
-            }
-            &--text{
-                padding: 1.2rem;
-                padding-right: 2.2rem;
-                height: 8rem;
-                >*{
-                    margin-bottom: 0rem;
-                }
-                p{
-                    position: relative;
-                    line-height: 100%;
-                }
-            }
-        }
+  .teamSponsor {
+    &--section {
+      width: 100vw;
     }
-    .heading-tertiary{
-        font-size: 2.5rem;
-    }
-    .speaker{
-        // &--section{
-        //     .heading-secondary{
-        //         // font-size: 3rem;
-        //     }
-        // }
-        &__container{
-            margin-top: 0 !important;
-            &--card{
-                width: 90%;
-                
-            }
+
+    &__team {
+      margin: 0;
+      &--img {
+        height: 8rem;
+        width: 20vw;
+      }
+      &--text {
+        padding: 1.2rem;
+        height: 8rem;
+        > * {
+          margin-bottom: 0rem;
         }
-        &__details{
-            h3 {
-                font-size: 1.5rem;
-            }
-            h4{
-                font-size: 1.1rem;
-            }
-            
+        p {
+          position: relative;
+          line-height: 100%;
         }
+      }
     }
-    .accordion {
-        .accordion-item {
-            width: 80vw;
-            p{
-                margin:unset;
-                font-size: 1.1rem;
-            }
+    &__sponsors {
+      margin: 2rem 0rem;
+      &--img {
+        height: 8rem;
+        width: 20vw;
+      }
+      &--text {
+        padding: 1.2rem;
+        padding-right: 2.2rem;
+        height: 8rem;
+        > * {
+          margin-bottom: 0rem;
         }
-    }
-    .engine__img{
-        svg{
-            height: 100px;
-            width: 100px;
-            transform: translateY(3rem);
+        p {
+          position: relative;
+          line-height: 100%;
         }
+      }
     }
-    .faq{
-        &__container {
-            padding: unset;
-        }
+  }
+  .heading-tertiary {
+    font-size: 2.5rem;
+  }
+  .speaker {
+    // &--section{
+    //     .heading-secondary{
+    //         // font-size: 3rem;
+    //     }
+    // }
+    &__container {
+      margin-top: 0 !important;
+      &--card {
+        width: 90%;
+      }
     }
+    &__details {
+      h3 {
+        font-size: 1.5rem;
+      }
+      h4 {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .accordion {
+    .accordion-item {
+      width: 80vw;
+      p {
+        margin: unset;
+        font-size: 1.1rem;
+      }
+    }
+    .accordion-content > p{
+      line-height: 1.4;
+      padding: 1rem 0rem;
+    }
+  }
+  .engine__img {
+    svg {
+      height: 100px;
+      width: 100px;
+      transform: translateY(3rem);
+    }
+  }
+  .faq {
+    &__container {
+      padding: unset;
+    }
+  }
+  ////nav-bar////
+
+  .nav-respo {
+    background-color: transparent;
+    // display: block;
+    
+    position: fixed;
+    top:1rem;
+    right:1rem;
+    width: 100%;
+    height: 70px;
+    z-index: 3;
+    padding: 0;
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+    .active {
+      color: #679b9b;
+    }
+    a:hover {
+      color: #679b9b;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: auto;
+      background-color: #0799c8;
+    }
+    li a {
+      display: block;
+      padding: 20px 20px;
+      text-decoration: none;
+    }
+    // li a:hover,
+    // .menu-btn:hover {
+    // }
+    .logo {
+      display: block;
+      float: left;
+      padding: 5px 30px;
+    }
+    .menu {
+      clear: both;
+      max-height: 0px;
+      font-size: 22px;
+      /* top:30px; */
+      margin-top: 10px;
+      transition: max-height 0.5s ease-out;
+      li button {
+        background-color: transparent;
+        border: none;
+        font-size: 22px;
+        font-family: "Space Grotesk";
+        margin-right: 10px;
+        margin-top: 0;
+      }
+    }
+    label {
+      cursor: pointer;
+      display: inline-block;
+      float: right;
+      padding: 42px 30px;
+      position: relative;
+      user-select: none;
+      .navicon {
+        background: #f1d1d1;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 25px;
+      }
+      .navicon:before,
+      .navicon:after {
+        background: #333;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+        top: -5px;
+      }
+    }
+    .menu-btn {
+    }
+    .menu-btn:checked ~ .menu {
+      max-height: 340px;
+      .navicon {
+        background: transparent;
+      }
+      .navicon:before {
+        transform: rotate(-45deg);
+      }
+      .navicon:after {
+        transform: rotate(45deg);
+      }
+    }
+    .nav-respo .menu-btn:checked ~ label:not(.steps) .navicon:before,
+    .nav-respo .menu-btn:checked ~ label:not(.steps) .navicon:after {
+      top: 0;
+    }
+  }
+
+  /* 48em = 768px */
+
 }
-  
-@media only screen and (max-width:1024px) {
+@media (min-width: 70em) {
+    .nav-respo h1 {
+      font-size: 50px;
+    }
+    .nav-respo li {
+      float: left;
+    }
+    .nav-respo li a {
+      padding: 20px 30px;
+    }
+    .nav-respo .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .nav-respo label {
+      display: none;
+    }
+    .nav-respo .menu li button {
+      background-color: transparent;
+    }
+    
+    
+}
+@media only screen and (max-width: 1024px) {
 }
