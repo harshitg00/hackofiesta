@@ -612,7 +612,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     width: 0; }
   .accordion button[aria-expanded='true'] + .accordion-content {
     opacity: 1;
-    max-height: 13em;
+    max-height: 20em;
     transition: all 200ms linear;
     will-change: opacity, max-height; }
 
@@ -1162,7 +1162,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     .theme__container--card--2 {
       flex-grow: 20%; }
 
-@media only screen and (max-width: 800px) {
+.nav-respo {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
   html {
     font-size: 75%;
     width: 100%; }
@@ -1172,6 +1175,14 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     overflow-x: hidden; }
   div[class$="__container"] {
     margin-top: 2rem; }
+  .navigation {
+    display: none; }
+  .darktheme__container > label {
+    width: 2rem;
+    height: 2rem; }
+  .darktheme__container > label:after {
+    width: 1.3rem;
+    height: 1.3rem; }
   .home__container {
     padding-top: 3rem; }
     .home__container h1 {
@@ -1226,12 +1237,6 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     top: unset;
     bottom: 10%;
     left: 85%; }
-  label {
-    width: 2rem;
-    height: 2rem; }
-  label:after {
-    width: 1.3rem;
-    height: 1.3rem; }
   .teamSponsor--section {
     width: 100vw; }
   .teamSponsor__team {
@@ -1276,9 +1281,107 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     .accordion .accordion-item p {
       margin: unset;
       font-size: 1.1rem; }
+  .accordion .accordion-content > p {
+    line-height: 1.4;
+    padding: 1rem 0rem; }
   .engine__img svg {
     height: 100px;
     width: 100px;
     transform: translateY(3rem); }
   .faq__container {
-    padding: unset; } }
+    padding: unset; }
+  .nav-respo {
+    background-color: transparent;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    width: 100%;
+    height: 70px;
+    z-index: 3;
+    padding: 0; }
+    .nav-respo a {
+      text-decoration: none;
+      color: #000; }
+    .nav-respo .active {
+      color: #679b9b; }
+    .nav-respo a:hover {
+      color: #679b9b; }
+    .nav-respo ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: auto;
+      background-color: #0799c8; }
+    .nav-respo li a {
+      display: block;
+      padding: 20px 20px;
+      text-decoration: none; }
+    .nav-respo .logo {
+      display: block;
+      float: left;
+      padding: 5px 30px; }
+    .nav-respo .menu {
+      clear: both;
+      max-height: 0px;
+      font-size: 22px;
+      /* top:30px; */
+      margin-top: 10px;
+      transition: max-height 0.5s ease-out; }
+      .nav-respo .menu li button {
+        background-color: transparent;
+        border: none;
+        font-size: 22px;
+        font-family: "Space Grotesk";
+        margin-right: 10px;
+        margin-top: 0; }
+    .nav-respo label {
+      cursor: pointer;
+      display: inline-block;
+      float: right;
+      padding: 42px 30px;
+      position: relative;
+      user-select: none; }
+      .nav-respo label .navicon {
+        background: #f1d1d1;
+        display: block;
+        height: 2px;
+        position: relative;
+        width: 25px; }
+      .nav-respo label .navicon:before,
+      .nav-respo label .navicon:after {
+        background: #333;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+        width: 100%;
+        top: -5px; }
+    .nav-respo .menu-btn:checked ~ .menu {
+      max-height: 340px; }
+      .nav-respo .menu-btn:checked ~ .menu .navicon {
+        background: transparent; }
+      .nav-respo .menu-btn:checked ~ .menu .navicon:before {
+        transform: rotate(-45deg); }
+      .nav-respo .menu-btn:checked ~ .menu .navicon:after {
+        transform: rotate(45deg); }
+    .nav-respo .nav-respo .menu-btn:checked ~ label:not(.steps) .navicon:before,
+    .nav-respo .nav-respo .menu-btn:checked ~ label:not(.steps) .navicon:after {
+      top: 0; }
+  /* 48em = 768px */ }
+
+@media (min-width: 70em) {
+  .nav-respo h1 {
+    font-size: 50px; }
+  .nav-respo li {
+    float: left; }
+  .nav-respo li a {
+    padding: 20px 30px; }
+  .nav-respo .menu {
+    clear: none;
+    float: right;
+    max-height: none; }
+  .nav-respo label {
+    display: none; }
+  .nav-respo .menu li button {
+    background-color: transparent; } }

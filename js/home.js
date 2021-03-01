@@ -81,7 +81,8 @@ var fullAnimation = (function() {
   
   // Start on load
   window.onload = function() {
-	  fullAnimation.init()
+	  fullAnimation.init();
+	  makeCountdownResp();
   }
   
   // Re-run
@@ -149,3 +150,18 @@ gsap.to([wheel1, wheel2, wheel3], 1, {
   ease: Power0.easeOut,
   repeat: -1
 });
+
+window.onresize = function () {
+	makeCountdownResp();
+};
+
+function makeCountdownResp(){
+	var width = window.innerWidth;
+	if (width <= 768) {
+		timer = document.querySelector(".countDown_desktop");
+		timer.className = "countDown_respo";
+	} else {
+		timer = document.querySelector(".countDown_respo");
+		timer.className = "flex-w flex-c-m cd100 countDown_desktop";
+	}
+}

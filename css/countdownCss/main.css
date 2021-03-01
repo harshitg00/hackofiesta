@@ -141,7 +141,26 @@
 
   .w-full-md {width: 100%;}
   /*---------------------------------------------*/
-
+ 
+    .l1-txt1 {
+      font-size: 1.3rem;
+    }
+    .p-t-50 {
+      padding: 2rem !important;
+    }
+    .p-b-40 {
+      padding-bottom: 2rem !important;
+    }
+    .countDown_respo{
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      flex-basis: 70vw;
+      width: 60vw;
+      top: 7rem;
+      left: -5rem;
+      text-shadow: 2px 2px rgb(56, 56, 56);
+    }
 }
 
 
@@ -167,9 +186,7 @@
   .w-full-sm {width: 100%;}
 
   /*---------------------------------------------*/
-  .respon1 {
-    font-size: 45px;
-  }
+  
   
 }
 
