@@ -47,6 +47,11 @@
     font-weight: 600;
     margin-bottom: 4rem;
     color: #51555E;
+
+    p{    
+        margin-bottom: 4rem;
+    }
+
     }
 }
 
@@ -102,7 +107,7 @@
         width: 80%;
         @include marginCenter;
         margin-top: 3rem;
-
+        margin-bottom: 2rem;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;

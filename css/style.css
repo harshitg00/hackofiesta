@@ -3,7 +3,7 @@
 :root {
   --color-background:#1D2026;
   --color-scroll:#e5eeff;
-  --color-heading:#e5eeff;
+  --color-heading:#ffffff;
   --color-textShadow:#fff;
   --color-textShadow-2:rgba(255, 255, 255, 0.204);
   --color-speaker:#ffffff;
@@ -125,7 +125,7 @@ h3, h4 {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
   .heading-secondary--white {
-    color: white; }
+    color: var(--color-heading); }
 
 .heading-tertiary {
   font-size: 3rem;
@@ -488,8 +488,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin-top: 2rem; }
 
 .speaker--section {
-  text-align: center;
-  background-color: #1D2026; }
+  text-align: center; }
 
 .speaker__container {
   width: 70%;
@@ -521,12 +520,15 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .speaker__details {
   text-align: left;
-  height: 75%; }
+  height: 75%;
+  text-transform: capitalize; }
   .speaker__details h3 {
     font-size: 1.1rem;
-    color: #fff !important; }
+    color: #fff;
+    color: var(--color-heading) !important; }
   .speaker__details h4 {
-    color: #fff !important;
+    color: #fff;
+    color: var(--color-heading) !important;
     font-size: 0.7rem;
     margin: -0.2rem 0 0 0; }
 
@@ -539,7 +541,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .speaker__link {
   height: 1rem;
   width: 1rem;
-  background-color: #fff;
+  background-color: var(--color-heading);
   border-radius: 50%;
   margin: 0.1rem 0.5rem 0 0; }
 
@@ -552,7 +554,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   flex-wrap: wrap;
   justify-content: space-evenly; }
   .faq__container .header-secondary {
-    text-align: center; }
+    text-align: center;
+    color: var(--color-heading) !important; }
 
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5; }
@@ -626,7 +629,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     font-size: 1rem;
     font-weight: 300;
     margin: 2em 0;
-    color: white; }
+    color: var(--color-heading); }
 
 .team--section, .sponsor--section {
   width: 70vw;
@@ -1125,6 +1128,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     font-weight: 600;
     margin-bottom: 4rem;
     color: #51555E; }
+    .about__container--text p {
+      margin-bottom: 4rem; }
 
 .about__img {
   height: 15rem; }
@@ -1154,6 +1159,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   width: 80%;
   margin: 0 auto;
   margin-top: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap; }

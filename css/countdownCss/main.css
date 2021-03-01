@@ -9,7 +9,9 @@
   font-family: 'Poppins';
   font-weight: 400;
   font-size: 12px;
-  color: #fff;
+  /* color: #fff; */
+  color: var(--color-heading);
+  
   line-height: 1;
   text-transform: uppercase;
 }
@@ -20,7 +22,9 @@
   font-weight: 200;
   font-size: 1rem;
   line-height: 1.1;
-  color: rgba(255, 255, 255, 0.5);
+  /* color: rgba(255, 255, 255, 0.5); */
+  color: var(--color-heading);
+
   text-transform: uppercase;
   letter-spacing: 15px;
 }
@@ -30,7 +34,8 @@
   font-weight: 800;
   font-size: 2.1rem;
   line-height: 1;
-  color: rgb(255, 255, 255);
+  /* color: rgb(255, 255, 255); */
+  color: var(--color-heading);
   /* //color numb */
   text-transform: uppercase;
 }

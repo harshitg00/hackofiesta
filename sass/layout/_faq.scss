@@ -26,6 +26,7 @@ $blue: #03b5d2;
         justify-content: space-evenly;
         .header-secondary{
             text-align: center;
+              color: var(--color-heading) !important;
         }
     }
 }
@@ -113,7 +114,7 @@ $blue: #03b5d2;
       font-size: 1rem;
       font-weight: 300;
       margin: 2em 0;
-      color: white;
+      color: var(--color-heading);
     }
   }
 }
