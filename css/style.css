@@ -628,6 +628,71 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     margin: 2em 0;
     color: white; }
 
+.team--section, .sponsor--section {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.team__heading, .sponsor__heading {
+  margin: 0 auto;
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important; }
+
+.team__container, .sponsor__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 3rem;
+  margin-bottom: -5rem; }
+
+.team__card, .sponsor__card {
+  height: 23rem;
+  width: 18rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #1D2026;
+  margin: 0.3rem;
+  transition: all 0.5s;
+  border-radius: 2px; }
+  .team__card-img, .sponsor__card-img {
+    margin: 1rem; }
+    .team__card-img img, .sponsor__card-img img {
+      border-radius: 100%;
+      height: 11rem;
+      width: 11rem; }
+  .team__card-details, .sponsor__card-details {
+    margin: 1rem; }
+    .team__card-details h4, .sponsor__card-details h4 {
+      color: white;
+      font-family: 'Poppins';
+      font-size: 1.1rem; }
+    .team__card-details h6, .sponsor__card-details h6 {
+      color: white;
+      font-family: 'Poppins';
+      font-size: 0.9rem;
+      margin: 0.6rem; }
+  .team__card--links, .sponsor__card--links {
+    margin: 1rem; }
+    .team__card--links > *, .sponsor__card--links > * {
+      margin: 0.4rem;
+      font-size: 1.7rem;
+      color: white; }
+  .team__card:hover, .sponsor__card:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    transform: scale(1.1); }
+
+.sponsor__card {
+  height: 16rem;
+  width: 16rem; }
+  .sponsor__card img {
+    height: 14rem;
+    width: 14rem; }
+
 .theme__item {
   align-items: center;
   background-color: #fff;

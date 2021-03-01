@@ -1,0 +1,106 @@
+.team,.sponsor{
+    
+    &--section{
+        // background-color: aquamarine;
+
+        width: 70vw;
+        @include marginCenter;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__heading{
+
+        @include marginCenter;
+
+        
+        margin-top: 3rem !important;
+        margin-bottom: 3rem !important;
+
+    }
+
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 3rem;
+        margin-bottom: -5rem;
+
+    }
+
+    &__card{
+        height: 23rem;
+        width: 18rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: $color-primary-black;
+        margin: 0.3rem;
+        transition: all 0.5s;
+
+        border-radius: 2px;
+
+        &-img{
+            margin: 1rem;
+            img{    
+                border-radius: 100%;
+                height: 11rem;
+                width: 11rem;
+            }
+        }
+
+        &-details{
+            margin: 1rem;
+
+            h4{
+                color: rgb(255, 255, 255);
+                font-family: 'Poppins';
+                font-size: 1.1rem;
+            }
+            h6{
+                color: rgb(255, 255, 255);
+                font-family: 'Poppins';
+                font-size: 0.9rem;
+                margin: 0.6rem;
+            }
+        }
+
+        &--links{
+            margin: 1rem;
+
+            & > * {
+                margin: 0.4rem;
+                font-size: 1.7rem;
+                color: white;
+            }
+        }
+
+
+        &:hover{
+            box-shadow: rgba(0,0,0, 0.25) 0px 14px 28px, rgba(  0,0,0, 0.22) 0px 10px 10px;
+            transform: scale(1.1);
+            // box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            
+            // box-shadow: rgba($0,0,0, 0.4) -5px 5px, rgba($0,0,0, 0.3) -10px 10px, rgba($0,0,0, 0.2) -15px 15px, rgba($0,0,0, 0.1) -20px 20px, rgba($0,0,0, 0.05) -25px 25px;
+
+        }
+    }
+}
+
+.sponsor{
+
+    
+
+    &__card{
+        height: 16rem;
+        width: 16rem;
+
+        img{
+            height: 14rem;
+            width: 14rem;
+        }
+    }
+}
