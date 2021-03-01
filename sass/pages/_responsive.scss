@@ -9,6 +9,7 @@
   body {
     width: 100%;
     height: 100%;
+    position: relative;
     overflow-x: hidden;
   }
   div[class$="__container"] {
@@ -65,10 +66,10 @@
     }
   }
   .hero {
-    // display: none;
-    width: 70vw;
-    left: 10vw;
-    top: 30vh;
+    // display: none; 
+    width: 55vw;
+    left: 60vw;
+    top:-5vh;
   }
   .about {
     &-section {
@@ -114,9 +115,6 @@
     }
   }
   .darktheme {
-    position: absolute;
-    top: unset;
-    bottom: 10%;
     left: 85%;
   }
 
@@ -212,137 +210,4 @@
       padding: unset;
     }
   }
-  ////nav-bar////
-
-  .nav-respo {
-    background-color: transparent;
-    // display: block;
-    
-    position: fixed;
-    top:1rem;
-    right:1rem;
-    width: 100%;
-    height: 70px;
-    z-index: 3;
-    padding: 0;
-    a {
-      text-decoration: none;
-      color: #000;
-    }
-    .active {
-      color: #679b9b;
-    }
-    a:hover {
-      color: #679b9b;
-    }
-    ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      overflow: auto;
-      background-color: #0799c8;
-    }
-    li a {
-      display: block;
-      padding: 20px 20px;
-      text-decoration: none;
-    }
-    // li a:hover,
-    // .menu-btn:hover {
-    // }
-    .logo {
-      display: block;
-      float: left;
-      padding: 5px 30px;
-    }
-    .menu {
-      clear: both;
-      max-height: 0px;
-      font-size: 22px;
-      /* top:30px; */
-      margin-top: 10px;
-      transition: max-height 0.5s ease-out;
-      li button {
-        background-color: transparent;
-        border: none;
-        font-size: 22px;
-        font-family: "Space Grotesk";
-        margin-right: 10px;
-        margin-top: 0;
-      }
-    }
-    label {
-      cursor: pointer;
-      display: inline-block;
-      float: right;
-      padding: 42px 30px;
-      position: relative;
-      user-select: none;
-      .navicon {
-        background: #f1d1d1;
-        display: block;
-        height: 2px;
-        position: relative;
-        width: 25px;
-      }
-      .navicon:before,
-      .navicon:after {
-        background: #333;
-        content: "";
-        display: block;
-        height: 100%;
-        position: absolute;
-        transition: all 0.2s ease-out;
-        width: 100%;
-        top: -5px;
-      }
-    }
-    .menu-btn {
-    }
-    .menu-btn:checked ~ .menu {
-      max-height: 340px;
-      .navicon {
-        background: transparent;
-      }
-      .navicon:before {
-        transform: rotate(-45deg);
-      }
-      .navicon:after {
-        transform: rotate(45deg);
-      }
-    }
-    .nav-respo .menu-btn:checked ~ label:not(.steps) .navicon:before,
-    .nav-respo .menu-btn:checked ~ label:not(.steps) .navicon:after {
-      top: 0;
-    }
-  }
-
-  /* 48em = 768px */
-
-}
-@media (min-width: 70em) {
-    .nav-respo h1 {
-      font-size: 50px;
-    }
-    .nav-respo li {
-      float: left;
-    }
-    .nav-respo li a {
-      padding: 20px 30px;
-    }
-    .nav-respo .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .nav-respo label {
-      display: none;
-    }
-    .nav-respo .menu li button {
-      background-color: transparent;
-    }
-    
-    
-}
-@media only screen and (max-width: 1024px) {
 }

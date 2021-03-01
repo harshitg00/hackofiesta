@@ -48,6 +48,8 @@ html {
 
 body {
     box-sizing: border-box;
+    position: relative;
+    overflow-x: hidden;
     font-family: 'Assistant', sans-serif;
     background-color: var(--color-background) !important;
 }

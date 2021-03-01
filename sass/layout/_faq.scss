@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
 
 $bg: #fff;
-$text: #7288a2;
+$text: var(--color-faq);
 $gray: #4d5974;
-$lightgray: #e5e5e5;
+$lightgray:var(--color-faq);
 $blue: #03b5d2;
 
 // * {
