@@ -137,7 +137,7 @@ h3, h4 {
   text-transform: uppercase; }
 
 .darktheme {
-  z-index: 10;
+  z-index: 5000;
   box-sizing: border-box;
   position: fixed;
   top: 85%;
@@ -671,7 +671,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     .team__card-img img, .sponsor__card-img img {
       border-radius: 100%;
       height: 11rem;
-      width: 11rem; }
+      width: 11rem;
+      object-fit: cover; }
   .team__card-details, .sponsor__card-details {
     margin: 1rem; }
     .team__card-details h4, .sponsor__card-details h4 {
@@ -1188,12 +1189,6 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     margin-top: 2rem; }
   .navigation {
     display: none; }
-  .darktheme__container > label {
-    width: 2rem;
-    height: 2rem; }
-  .darktheme__container > label:after {
-    width: 1.3rem;
-    height: 1.3rem; }
   .home__container {
     padding-top: 3rem; }
     .home__container h1 {
@@ -1206,13 +1201,18 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
       padding: 0 0 0;
       text-align: right; }
   .home__button {
-    width: 50%;
+    width: 60%;
     position: absolute;
     bottom: 20vh;
     left: 50%;
     transform: translateX(-50%); }
     .home__button > * {
       margin: 0.5rem 1rem; }
+    .home__button .cta-button-hero {
+      text-align: center;
+      display: block;
+      width: 80vw;
+      font-size: 1.8rem; }
   .home__scroll i {
     width: 1rem;
     top: 95%; }
@@ -1240,9 +1240,6 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     width: 100vw; }
   .theme--card {
     margin-bottom: 2rem; }
-  .cta-button-hero {
-    padding: 0.4rem 2rem;
-    font-size: 1.6rem; }
   .darktheme {
     left: 85%; }
   .teamSponsor--section {
@@ -1297,4 +1294,11 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     width: 100px;
     transform: translateY(3rem); }
   .faq__container {
-    padding: unset; } }
+    padding: unset; }
+  .team--section {
+    font-size: 75%; }
+    .team--section .heading-secondary {
+      text-align: center;
+      font-size: 2rem; }
+  .team__card-details {
+    width: 15rem; } }
