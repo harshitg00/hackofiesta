@@ -206,6 +206,11 @@
   .team{
     &--section{
       font-size: 75%;
+    }
+    &__container{
+      margin-top: unset !important;
+    }
+    &__heading{
       .heading-secondary{
         text-align: center;
         font-size: 2rem;
