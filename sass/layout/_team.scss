@@ -15,7 +15,7 @@
         @include marginCenter;
 
         
-        margin-top: 3rem !important;
+        margin-top: 6rem !important;
         margin-bottom: 3rem !important;
 
     }
@@ -24,7 +24,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: -5rem;
+        margin-bottom: 2rem;
 
     }
 
@@ -32,6 +32,7 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        overflow: hidden;
     }
     &__card{
         height: 23rem;
@@ -107,5 +108,11 @@
             height: 14rem;
             width: 14rem;
         }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 12px !important;
     }
 }

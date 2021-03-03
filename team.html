@@ -35,7 +35,7 @@
     <meta name="theme-color" content="#428647">
   
 </head>
-  <body class="u-body" >
+  <body class="u-body" style="overflow: hidden;" >
 
     
 		<!-- Google Tag Manager (noscript) -->
@@ -50,7 +50,108 @@
 
     <img style="size: 100%; position: absolute; z-index: -1; background-size: contain;" src="./img/confettin-bg-2.svg" alt="">
     <img style="size: 100%; position: absolute; z-index: -1;background-size: contain;" src="./img/confettin-bg-3.svg" alt="">
-
+    <div class="nav-respo" style="font-size: unset;">
+      <button class="btn btn-hamburger" onclick="hamburger(event)">
+        <span class="line"></span>
+      </button>
+      <div class="menu" >
+        <ul>
+          <li class="nav-respo__item">
+            <a href="/#home" class="nav-respo__link" onclick="return hamburger()">
+              Home
+            </a>
+          </li>
+          <li class="nav-respo__item">
+            <a href="/#about" class="nav-respo__link" onclick="return hamburger()">
+              About
+            </a>
+          </li>
+          <li class="nav-respo__item">
+            <a href="/#theme" class="nav-respo__link" onclick="return hamburger()">
+              Themes
+            </a>
+          </li>
+          <li class="nav-respo__item">
+            <a href="/#prizes" class="nav-respo__link" onclick="return hamburger()">
+              Prizes
+            </a>
+          </li>
+          <li class="nav-respo__item">
+            <a href="/#speaker" class="nav-respo__link" onclick="return hamburger()">
+              Speakers
+            </a>
+          </li>
+          <li class="nav-respo__item">
+            <a href="/#faq" class="nav-respo__link" onclick="return hamburger()">
+              FAQs
+            </a>
+          </li>
+          <li class="nav-respo__item">
+            <a href="/sponsors.html" class="nav-respo__link" onclick="return hamburger()">
+              Our Sponsors
+            </a>
+          </li>
+          <li class="nav-respo__item">
+            <a href="/#follow" class="nav-respo__link" onclick="return hamburger()">
+              Follow Us
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="navigation">
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <!-- <span>01</span>  -->
+            <a href="/#about" class="navigation__link">
+              About
+            </a>
+          </li>
+          
+          <li class="navigation__item">
+            <!-- <span>01</span>  -->
+            <a href="/#speaker" class="navigation__link">
+              Speakers
+            </a>
+          </li>
+          
+          <li class="navigation__item">
+            <!-- <span>01</span>  -->
+            <a href="#" class="navigation__link">
+              Team
+            </a>
+          </li>
+          <li class="navigation__item navigation__item--home">
+            <!-- <span>01</span>  -->
+            <a href="/#home" class="navigation__link">
+              <img src="./img/423483-200.png" alt="">			   
+            </a>
+          </li>
+          <li class="navigation__item">
+            <!-- <span>01</span>  -->
+            <a href="/#theme" class="navigation__link">
+              Theme
+            </a>
+          </li>
+          
+          <li class="navigation__item">
+            <!-- <span>01</span>  -->
+            <a href="/#prizes" class="navigation__link">
+              Prizes
+            </a>
+          </li>
+          
+          <li class="navigation__item">
+            <!-- <span>01</span>  -->
+            <a href="/sponsors.html" class="navigation__link">
+              Sponsors
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    
     <section class="team--section">
 
       <div class="team__heading">
@@ -241,7 +342,7 @@
         
         <div class="team__card">
           <div class="team__card-img">
-            <img src="./img/team/AbhijeetDwivedi.png" alt="">
+            <img src="./img/team/Nipun.jpeg" alt="">
           </div>
           <div class="team__card-details">
             <h4>Nipun Topno</h4>
@@ -374,4 +475,12 @@
     </section>
 
   </body>
+  <script>
+    hamburger = (event) => {
+      if(event)
+      event.preventDefault();
+      document.querySelector('.btn-hamburger').classList.toggle('open');
+      document.querySelector('.menu').classList.toggle('menu--open');
+    }
+  </script>
 </html>

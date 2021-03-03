@@ -159,9 +159,17 @@ function makeCountdownResp(){
 	var width = window.innerWidth;
 	if (width <= 768) {
 		timer = document.querySelector(".countDown_desktop");
+		if(timer)
 		timer.className = "countDown_respo";
 	} else {
 		timer = document.querySelector(".countDown_respo");
+		if(timer)
 		timer.className = "flex-w flex-c-m cd100 countDown_desktop";
 	}
+}
+hamburger = (event) => {
+	if(event)
+	event.preventDefault();
+	document.querySelector('.btn-hamburger').classList.toggle('open');
+	document.querySelector('.menu').classList.toggle('menu--open');
 }

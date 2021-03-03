@@ -210,8 +210,7 @@ h3, h4 {
   .home__container img {
     margin: 0 auto;
     height: 6rem;
-    width: 6rem;
-    clip-path: polygon(50% 25%, 0 100%, 100% 100%); }
+    width: 6rem; }
   .home__container--text {
     width: 70%;
     margin: 0 auto; }
@@ -452,14 +451,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   align-items: center;
   align-content: center; }
 
-.footer__row--img {
-  background-color: blue;
-  clip-path: polygon(50% 25%, 0 100%, 100% 100%);
-  margin-bottom: 1.1rem;
-  box-shadow: 4px 5px 4px black; }
-  .footer__row--img img {
-    height: 6rem;
-    width: 6rem; }
+.footer__row--img img {
+  height: 6rem;
+  width: 6rem; }
 
 .footer__row--text h1 {
   color: #1D2026;
@@ -644,19 +638,20 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .team__heading, .sponsor__heading {
   margin: 0 auto;
-  margin-top: 3rem !important;
+  margin-top: 6rem !important;
   margin-bottom: 3rem !important; }
 
 .team__container, .sponsor__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: -5rem; }
+  margin-bottom: 2rem; }
 
 .team__row, .sponsor__row {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  overflow: hidden; }
 
 .team__card, .sponsor__card {
   height: 23rem;
@@ -704,6 +699,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   .sponsor__card img {
     height: 14rem;
     width: 14rem; }
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 12px !important; } }
 
 .theme__item {
   align-items: center;
@@ -997,8 +996,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 3rem;
-    padding: 0 1rem; }
+    height: 60px;
+    padding: 0 20px; }
 
 .navigation__item {
   list-style: none;
@@ -1010,16 +1009,18 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     width: 0%;
     text-transform: uppercase;
     font-family: Evolve Sans;
-    font-size: 0.7rem; }
+    font-size: 14.12px; }
   .navigation__item:hover a {
     width: 100%;
     opacity: 1; }
   .navigation__item--home a {
-    font-size: 2rem;
+    font-size: 40px;
     fill: white; }
     .navigation__item--home a img {
-      height: 2.5rem;
-      width: 2.5rem; }
+      height: 50px;
+      width: 50px; }
+  .navigation__item--home a::after {
+    visibility: hidden; }
 
 @keyframes widthInc {
   0% {
@@ -1047,6 +1048,93 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     bottom: -2px;
     width: 100%;
     height: 100%; }
+
+@media only screen and (max-width: 768px) {
+  .nav-respo {
+    box-sizing: border-box;
+    display: block !important; }
+    .nav-respo .menu {
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.15s linear;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      z-index: 99999;
+      position: fixed;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.85);
+      -webkit-tap-highlight-color: transparent; }
+      .nav-respo .menu--open {
+        visibility: visible;
+        opacity: 1; }
+      .nav-respo .menu ul {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 44rem;
+        padding: 0 1rem;
+        list-style: none;
+        font-size: 2rem; }
+        .nav-respo .menu ul li a {
+          font-family: Stargaze Stencil;
+          font-size: 2rem;
+          line-height: 5rem;
+          text-transform: uppercase;
+          display: inline-block;
+          color: white;
+          letter-spacing: .2rem;
+          transition: all .2s;
+          text-decoration: none; }
+    .nav-respo .btn {
+      z-index: 99999999;
+      margin: 2px 2px 2px 2px;
+      width: 4rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      background: #2020207e;
+      justify-content: space-evenly;
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      border: 0;
+      padding: 1.6rem 0.5rem;
+      cursor: pointer; }
+      .nav-respo .btn:focus {
+        outline: 0; }
+    .nav-respo .btn-hamburger .line {
+      position: relative;
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      .nav-respo .btn-hamburger .line, .nav-respo .btn-hamburger .line::before, .nav-respo .btn-hamburger .line::after {
+        width: 100%;
+        height: 6px;
+        background-color: white; }
+      .nav-respo .btn-hamburger .line::before, .nav-respo .btn-hamburger .line::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: inherit; }
+      .nav-respo .btn-hamburger .line::before {
+        top: -12px; }
+      .nav-respo .btn-hamburger .line::after {
+        bottom: -12px; }
+    .nav-respo .btn-hamburger.open .line {
+      transform: rotate(-45deg);
+      background-color: transparent; }
+      .nav-respo .btn-hamburger.open .line::before {
+        transform: translateY(12px);
+        background-color: #5AA2E5; }
+      .nav-respo .btn-hamburger.open .line::after {
+        transform: translateY(-12px) rotate(90deg);
+        background-color: #5AA2E5; } }
 
 .teamSponsor--section {
   width: 70%;
@@ -1299,12 +1387,18 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     transform: translateY(3rem); }
   .faq__container {
     padding: unset; }
-  .team--section {
+  .team--section, .sponsor--section {
     font-size: 75%; }
-  .team__container {
+  .team__container, .sponsor__container {
     margin-top: unset !important; }
-  .team__heading .heading-secondary {
+  .team__heading .heading-secondary, .sponsor__heading .heading-secondary {
     text-align: center;
-    font-size: 2rem; }
-  .team__card-details {
-    width: 15rem; } }
+    line-height: 120%; }
+  .team__card-details, .sponsor__card-details {
+    width: 15rem; }
+    .team__card-details h4, .sponsor__card-details h4 {
+      font-size: 1.46rem; }
+    .team__card-details h6, .sponsor__card-details h6 {
+      font-size: 1.2rem; }
+  .team__card--links a, .sponsor__card--links a {
+    font-size: 2.26rem; } }

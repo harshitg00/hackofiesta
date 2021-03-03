@@ -203,7 +203,7 @@
   }
 
   /////////////TEAMS//////////////////
-  .team{
+  .team,.sponsor{
     &--section{
       font-size: 75%;
     }
@@ -213,12 +213,24 @@
     &__heading{
       .heading-secondary{
         text-align: center;
-        font-size: 2rem;
+        line-height: 120%;
+        // width: 100vw;
       }
     }
     &__card{
       &-details{
         width: 15rem;
+        h4{
+          font-size: 1.46rem;
+        }
+        h6{
+          font-size: 1.2rem;        
+        }
+      }
+      &--links{
+        a{
+          font-size: 2.26rem;
+        }
       }
     }
   }
