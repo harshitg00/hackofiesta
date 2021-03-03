@@ -172,4 +172,5 @@ hamburger = (event) => {
 	event.preventDefault();
 	document.querySelector('.btn-hamburger').classList.toggle('open');
 	document.querySelector('.menu').classList.toggle('menu--open');
+	document.querySelector('html').classList.toggle('stop-scrolling');
 }

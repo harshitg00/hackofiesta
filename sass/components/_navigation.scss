@@ -169,9 +169,10 @@ $easingFunction: cubic-bezier(0.175, 0.885, 0.32, 1.275);
             background: #2020207e;
             justify-content: space-evenly;
             position: fixed;
-            top: 1rem;
-            right: 1rem;
+            top: 0.3rem;
+            right: 0.3rem;
             border: 0;
+            border-radius: 10%;
             padding: 1.6rem 0.5rem;
             cursor: pointer;
             &:focus {
@@ -221,4 +222,7 @@ $easingFunction: cubic-bezier(0.175, 0.885, 0.32, 1.275);
             
         }
     }
+}
+.stop-scrolling{
+    overflow-y: hidden;
 }

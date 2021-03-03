@@ -1103,9 +1103,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
       background: #2020207e;
       justify-content: space-evenly;
       position: fixed;
-      top: 1rem;
-      right: 1rem;
+      top: 0.3rem;
+      right: 0.3rem;
       border: 0;
+      border-radius: 10%;
       padding: 1.6rem 0.5rem;
       cursor: pointer; }
       .nav-respo .btn:focus {
@@ -1135,6 +1136,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
       .nav-respo .btn-hamburger.open .line::after {
         transform: translateY(-12px) rotate(90deg);
         background-color: #5AA2E5; } }
+
+.stop-scrolling {
+  overflow-y: hidden; }
 
 .teamSponsor--section {
   width: 70%;
