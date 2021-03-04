@@ -26,7 +26,7 @@ $color-primary-background:#e5eeff;
     --color-speaker:#ffffff;
     --color-navbg:#e5eeff;
     --color-faq:#7288a2;
-    
+    --color-tier: white;
     .label__dark:after {
         background-image: url("./../../img/sun.svg");
         // background-size: ;
@@ -46,7 +46,7 @@ html[data-theme='light'] {
     --color-textShadow-2:#1d202657;
     --color-speaker:#1d2026;
     --color-faq:#323438;
-    
+    --color-tier: #424344;
 
         
     .label__dark:after {

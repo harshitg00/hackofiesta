@@ -80,10 +80,11 @@ var fullAnimation = (function() {
   })()
   
   // Start on load
-  window.onload = function() {
-	  fullAnimation.init();
-	  makeCountdownResp();
-  }
+window.onload = function() {
+	fullAnimation.init();
+	makeCountdownResp();
+	hideLoader();
+}
   
   // Re-run
 //   document.getElementById('run-trigger').addEventListener('click', function(e) {
@@ -173,4 +174,7 @@ hamburger = (event) => {
 	document.querySelector('.btn-hamburger').classList.toggle('open');
 	document.querySelector('.menu').classList.toggle('menu--open');
 	document.querySelector('html').classList.toggle('stop-scrolling');
+}
+function hideLoader(){
+	document.querySelector('#loading').style.display = "none";
 }

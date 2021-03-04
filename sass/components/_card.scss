@@ -20,7 +20,6 @@
         width: 12.1rem;
         z-index: 1000;
 
-
         
 
 
@@ -56,6 +55,7 @@
             height: 12.1rem;
             width: 12.1rem;
             position: relative;
+            border-radius: 2px;
 
                 img{
                     @include centerAlign;
@@ -76,6 +76,7 @@
             transition-delay: .2s;
             transform: translateY(0px) translateX(0px);    
             z-index: -1;
+            border-radius: 2px;
         }
         &::after {
             background-image: linear-gradient(0deg, #FFCF70 0%, #FFAE3D 97%);
@@ -114,6 +115,7 @@
             height: 12.1rem;
             width: 24.1rem;
             z-index: 1000;
+            border-radius: 2px;
 
         &--details{
             height: 10rem;
@@ -158,6 +160,7 @@
             left: -3%;
             top: -3%;
             z-index: -1;
+            border-radius: 2px;
         }
         &::after {
             background-image: linear-gradient(0deg, #FFCF70 0%, #FFAE3D 97%);

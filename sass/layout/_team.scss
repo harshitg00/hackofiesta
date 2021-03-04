@@ -3,7 +3,7 @@
     &--section{
         // background-color: aquamarine;
 
-        width: 70vw;
+        width: 100vw;
         @include marginCenter;
         display: flex;
         flex-direction: column;
@@ -14,23 +14,24 @@
 
         @include marginCenter;
 
-        
-        margin-top: 6rem !important;
-
     }
 
     &__container{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
         
         .tier-heading{
             margin-top:2rem;
             display: block;
             text-align: center;
-            font-size: 2.5rem;
-            color: white;
+            font-size: 1.6rem;
+            font-weight: 900;
+            line-height: 0;
+            letter-spacing: 0.4rem;
+            text-transform: uppercase;
+            color: var(--color-tier);
         }
     }
 
@@ -104,7 +105,8 @@
 
 .sponsor{
     &__card{
-        height: 7rem;
+        height: 6rem;
+        max-height: fit-content;
         width: 20rem;
         background-color: white;
         border-radius: 5px;
@@ -115,6 +117,7 @@
 }
 .team__heading{
     margin-bottom: 3rem !important;
+    margin-top: 6rem !important;
 }
 @media only screen and (max-width: 768px) {
     html {

@@ -3,7 +3,7 @@
 
     &__nav{
         position: fixed;
-        z-index: 9999999;
+        z-index: 99999;
         left: 50%;
         transform: translateX(-50%);
         width: 60%;
@@ -160,7 +160,7 @@ $easingFunction: cubic-bezier(0.175, 0.885, 0.32, 1.275);
             }
         }
         .btn {
-            z-index: 99999999;
+            z-index: 999999;
             margin: 2px 2px 2px 2px;
             width: 4rem;
             height: 3rem;
