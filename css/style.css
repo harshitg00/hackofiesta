@@ -638,14 +638,19 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .team__heading, .sponsor__heading {
   margin: 0 auto;
-  margin-top: 6rem !important;
-  margin-bottom: 3rem !important; }
+  margin-top: 6rem !important; }
 
 .team__container, .sponsor__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-bottom: 2rem; }
+  .team__container .tier-heading, .sponsor__container .tier-heading {
+    margin-top: 2rem;
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white; }
 
 .team__row, .sponsor__row {
   display: flex;
@@ -662,7 +667,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   align-items: center;
   text-align: center;
   background-color: #1D2026;
-  margin: 0.3rem;
+  margin: 0.8rem;
   transition: all 0.5s;
   border-radius: 2px; }
   .team__card-img, .sponsor__card-img {
@@ -694,11 +699,15 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     transform: scale(1.1); }
 
 .sponsor__card {
-  height: 16rem;
-  width: 16rem; }
+  height: 7rem;
+  width: 20rem;
+  background-color: white;
+  border-radius: 5px; }
   .sponsor__card img {
-    height: 14rem;
-    width: 14rem; }
+    width: 16rem; }
+
+.team__heading {
+  margin-bottom: 3rem !important; }
 
 @media only screen and (max-width: 768px) {
   html {
@@ -1392,7 +1401,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   .faq__container {
     padding: unset; }
   .team--section, .sponsor--section {
-    font-size: 75%; }
+    font-size: 75%;
+    width: 100vw; }
   .team__container, .sponsor__container {
     margin-top: unset !important; }
   .team__heading .heading-secondary, .sponsor__heading .heading-secondary {
@@ -1405,4 +1415,11 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     .team__card-details h6, .sponsor__card-details h6 {
       font-size: 1.2rem; }
   .team__card--links a, .sponsor__card--links a {
-    font-size: 2.26rem; } }
+    font-size: 2.26rem; }
+  .sponsor__card {
+    height: 7rem;
+    width: 90vw;
+    background-color: white;
+    border-radius: 5px; }
+    .sponsor__card img {
+      width: 70vw; } }

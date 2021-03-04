@@ -206,6 +206,7 @@
   .team,.sponsor{
     &--section{
       font-size: 75%;
+      width: 100vw;
     }
     &__container{
       margin-top: unset !important;
@@ -231,6 +232,17 @@
         a{
           font-size: 2.26rem;
         }
+      }
+    }
+  }
+  .sponsor{
+    &__card{
+      height: 7rem;
+      width: 90vw;
+      background-color: white;
+      border-radius: 5px;
+      img{
+          width: 70vw;
       }
     }
   }

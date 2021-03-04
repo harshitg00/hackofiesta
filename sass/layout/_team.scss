@@ -16,7 +16,6 @@
 
         
         margin-top: 6rem !important;
-        margin-bottom: 3rem !important;
 
     }
 
@@ -25,7 +24,14 @@
         flex-direction: column;
         justify-content: center;
         margin-bottom: 2rem;
-
+        
+        .tier-heading{
+            margin-top:2rem;
+            display: block;
+            text-align: center;
+            font-size: 2.5rem;
+            color: white;
+        }
     }
 
     &__row{
@@ -43,7 +49,7 @@
         align-items: center;
         text-align: center;
         background-color: $color-primary-black;
-        margin: 0.3rem;
+        margin: 0.8rem;
         transition: all 0.5s;
 
         border-radius: 2px;
@@ -97,20 +103,19 @@
 }
 
 .sponsor{
-
-    
-
     &__card{
-        height: 16rem;
-        width: 16rem;
-
+        height: 7rem;
+        width: 20rem;
+        background-color: white;
+        border-radius: 5px;
         img{
-            height: 14rem;
-            width: 14rem;
+            width: 16rem;
         }
     }
 }
-
+.team__heading{
+    margin-bottom: 3rem !important;
+}
 @media only screen and (max-width: 768px) {
     html {
         font-size: 12px !important;
