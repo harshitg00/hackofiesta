@@ -1583,8 +1583,15 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     font-size: 2.26rem; }
   .sponsor__card {
     height: 7rem;
-    width: 90vw;
+    width: fit-content;
+    max-width: 25rem;
+    min-width: 20rem;
+    padding: 0 2rem;
     background-color: white;
-    border-radius: 5px; }
+    border-radius: 5px; } }
+
+@media only screen and (max-width: 480px) {
+  .sponsor__card {
+    width: 90vw; }
     .sponsor__card img {
       width: 70vw; } }

@@ -237,11 +237,21 @@
   .sponsor{
     &__card{
       height: 7rem;
-      width: 90vw;
+      width: fit-content;
+      max-width: 25rem;
+      min-width: 20rem;
+      padding: 0 2rem;
       background-color: white;
       border-radius: 5px;
+    }
+  }
+}
+@media only screen and (max-width:480px){
+  .sponsor{
+    &__card{
+      width: 90vw;
       img{
-          width: 70vw;
+        width: 70vw;
       }
     }
   }
