@@ -1,3 +1,4 @@
+var mobileDevice = 768;
 var fullAnimation = (function() {
   
 	var bigDarkRectangle = anime.timeline({
@@ -82,7 +83,6 @@ var fullAnimation = (function() {
   // Start on load
 window.onload = function() {
 	fullAnimation.init();
-	makeCountdownResp();
 	hideLoader();
 }
   
@@ -152,22 +152,6 @@ gsap.to([wheel1, wheel2, wheel3], 1, {
   repeat: -1
 });
 
-window.onresize = function () {
-	makeCountdownResp();
-};
-
-function makeCountdownResp(){
-	var width = window.innerWidth;
-	if (width <= 768) {
-		timer = document.querySelector(".countDown_desktop");
-		if(timer)
-		timer.className = "countDown_respo";
-	} else {
-		timer = document.querySelector(".countDown_respo");
-		if(timer)
-		timer.className = "flex-w flex-c-m cd100 countDown_desktop";
-	}
-}
 hamburger = (event) => {
 	if(event)
 	event.preventDefault();

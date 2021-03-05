@@ -1,7 +1,7 @@
 .nav-respo{
     display: none;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: $mobile-device) {
   html {
     font-size: 75%;
     width: 100%;
@@ -67,6 +67,9 @@
     left: 60vw;
     top:-5vh;
   }
+  .countDown__numbers > div{
+    width: 23vw !important;
+  }
   .about {
     &-section {
       clip-path: unset;
@@ -97,11 +100,6 @@
     }
     &--card {
       margin-bottom: 2rem;
-    }
-  }
-  .heading-secondary {
-    h1 {
-      // margin-top: 4rem;
     }
   }
   

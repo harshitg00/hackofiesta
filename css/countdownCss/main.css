@@ -1,5 +1,67 @@
 .cl0 {color: #fff;}
-
+.countDown__overlay{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  margin: 0 auto;
+}
+.countDown__container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  padding-bottom: 6rem; */
+  padding-top: 2.5rem;
+  width: 100vw;
+}
+.countDown__heading{
+  text-align: center;
+  padding-bottom: 2rem;
+  font-family: 'Poppins';
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.1;
+  color: var(--color-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.75rem;
+}
+.countDown__numbers{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.countDown__numbers > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  width: 14vw;
+}
+.countDown__numbers > div > span:first-child {
+  font-family: Poppins;
+  font-weight: 800;
+  font-size: 2.1rem;
+  line-height: 1;
+  color: var(--color-heading);
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+.countDown__numbers > div > span:nth-child(2) {
+  padding-left: 1.6rem;
+  align-self: center;
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 0.6rem;
+  color: var(--color-heading);
+  line-height: 1;
+  text-transform: uppercase;
+}
 .overlay1{
   margin: 0;
   margin: 0 auto;
@@ -155,14 +217,6 @@
     }
     .p-b-40 {
       padding-bottom: 2rem !important;
-    }
-    .countDown_respo{
-      position: absolute;
-      display: flex;
-      flex-direction: row;
-      flex-basis: 70vw;
-      width: 90vw;
-      top: 7rem;
     }
 }
 

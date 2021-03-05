@@ -811,7 +811,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 1.7rem; }
 
 .team__card, .sponsor__card {
   height: 23rem;
@@ -1371,6 +1372,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .about-section {
   position: relative;
   clip-path: polygon(0% 0%, 100% 10%, 100% 100%, 0% 90%);
+  transform: scaleZ(1);
   width: 100vw;
   background-color: #e5eeff;
   margin-top: 4rem;
@@ -1485,6 +1487,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     width: 55vw;
     left: 60vw;
     top: -5vh; }
+  .countDown__numbers > div {
+    width: 23vw !important; }
   .about-section {
     clip-path: unset;
     height: auto; }
