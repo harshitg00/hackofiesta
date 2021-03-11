@@ -1161,6 +1161,7 @@ label {
   left: -1.3%;
   width: 152.84%;
   height: 178.78%;
+  
   background-image: url("./../img/hero-back-illustration.svg");
 }
 .hero-figure::after {
