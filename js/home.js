@@ -81,10 +81,10 @@ var fullAnimation = (function() {
   })()
   
   // Start on load
-window.onload = function() {
-	fullAnimation.init();
-	hideLoader();
-}
+// window.onload = function() {
+// 	fullAnimation.init();
+// 	hideLoader();
+// }
   
   // Re-run
 //   document.getElementById('run-trigger').addEventListener('click', function(e) {
@@ -159,6 +159,8 @@ hamburger = (event) => {
 	document.querySelector('.menu').classList.toggle('menu--open');
 	document.querySelector('html').classList.toggle('stop-scrolling');
 }
-function hideLoader(){
-	document.querySelector('#loading').style.display = "none";
-}
+
+
+// function hideLoader(){
+// 	document.querySelector('#loading').style.display = "none";
+// }
