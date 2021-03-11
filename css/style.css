@@ -782,7 +782,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     color: var(--color-heading); }
 
 .team--section, .sponsor--section {
-  width: 100vw;
+  width: 90vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -806,13 +806,36 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     letter-spacing: 0.4rem;
     text-transform: uppercase;
     color: var(--color-tier); }
+    .team__container .tier-heading__small, .sponsor__container .tier-heading__small {
+      margin-top: 1rem;
+      text-align: center;
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 900;
+      letter-spacing: 0.2rem;
+      text-transform: uppercase;
+      color: var(--color-tier); }
 
 .team__row, .sponsor__row {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   overflow: hidden;
-  padding-bottom: 1.7rem; }
+  padding-bottom: 1.2rem; }
+
+.team__row2, .sponsor__row2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding-bottom: 1.2rem; }
+
+.team__column, .sponsor__column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
 
 .team__card, .sponsor__card {
   height: 23rem;
@@ -1587,7 +1610,6 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     max-width: 25rem;
     min-width: 20rem;
     padding: 0 2rem;
-    background-color: white;
     border-radius: 5px; } }
 
 @media only screen and (max-width: 480px) {

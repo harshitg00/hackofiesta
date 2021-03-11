@@ -235,13 +235,18 @@
     }
   }
   .sponsor{
+    // &__row{
+    //   h2{
+    //     text-align: center;
+    //   }
+    // }
     &__card{
       height: 7rem;
       width: fit-content;
       max-width: 25rem;
       min-width: 20rem;
       padding: 0 2rem;
-      background-color: white;
+      // background-color: white;
       border-radius: 5px;
     }
   }

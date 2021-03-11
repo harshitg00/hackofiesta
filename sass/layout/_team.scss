@@ -3,7 +3,7 @@
     &--section{
         // background-color: aquamarine;
 
-        width: 100vw;
+        width: 90vw;
         @include marginCenter;
         display: flex;
         flex-direction: column;
@@ -32,6 +32,16 @@
             letter-spacing: 0.4rem;
             text-transform: uppercase;
             color: var(--color-tier);
+            &__small{
+                margin-top:1rem;
+                text-align: center;
+                display: block;
+                font-size: 1.6rem;
+                font-weight: 900;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+                color: var(--color-tier);
+            }
         }
     }
 
@@ -40,7 +50,21 @@
         justify-content: center;
         flex-wrap: wrap;
         overflow: hidden;
-        padding-bottom: 1.7rem;
+        padding-bottom: 1.2rem;
+    }
+    &__row2{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding-bottom: 1.2rem;
+    }
+    &__column{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
     }
     &__card{
         height: 23rem;
