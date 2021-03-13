@@ -81,10 +81,10 @@ var fullAnimation = (function() {
   })()
   
   // Start on load
-// window.onload = function() {
-// 	fullAnimation.init();
+window.onload = function() {
+	fullAnimation.init();
 // 	hideLoader();
-// }
+}
   
   // Re-run
 //   document.getElementById('run-trigger').addEventListener('click', function(e) {
