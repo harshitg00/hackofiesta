@@ -1,22 +1,61 @@
 <!DOCTYPE html>
 <html lang="en" data-theme='ligth'>
 <head>
+
+
+	
+		<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-58LHNSV');
+	</script>
+		<!-- End Google Tag Manager -->
+
+
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hackofiesta</title>
+	<link rel="icon" type="image/png" href="img/logo.png"/>
 	
 	<!-- <link rel="stylesheet" href="https://preview.cruip.com/solid/dist/css/style.css"> -->
 	
     <link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/countdownCss/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/countdownCss/util.css">
+
     
     <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">
+
 	<script src="https://kit.fontawesome.com/3ea20092d3.js" crossorigin="anonymous"></script>
+	<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 
 </head>
 <body>
-		
+
+
+		<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-58LHNSV"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+		<!-- End Google Tag Manager (noscript) -->
+
+
+
+	
+	<!-- <div id="loading">
+		<div class='cssload-loader'>
+			<div class='cssload-inner cssload-one'></div>
+			<div class='cssload-inner cssload-two'></div>
+			<div class='cssload-inner cssload-three'></div>
+		</div>
+	</div> -->
 	<div class="hero">
 		<div class="container">
 			<div class="hero-inner">
@@ -57,40 +96,177 @@
 				<div class="darktheme__white darktheme__toggle__white" id="white">
 					<i class="fas fa-sun"></i>
 				</div> -->
-				<input type="checkbox" id="switch" name="theme" />	
-				<label for="switch">Toggle</label>
+				<input class="input__dark" type="checkbox" id="switch" name="theme" />	
+				<label class="label__dark" for="switch">Toggle</label>
 			</div>
 
 		</section>
-
-	<div class="navigation">
-		<!-- <nav class="navigation__nav">
-			<ul class="navigation__list">
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Home</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>About</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>Theme</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>Prizes</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>Speakers</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>06</span>FAQ</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>07</span>Team & Sponsors</a></li>
-				<li class="navigation__item"><a href="#" class="navigation__link"><span>08</span>Contact Us</a></li>
+	
+	<div class="nav-respo">
+		<button class="btn btn-hamburger" onclick="hamburger(event)">
+			<span class="line"></span>
+		</button>
+		<div class="menu" >
+			<ul>
+				<li class="nav-respo__item">
+					<a href="#home" class="nav-respo__link" onclick="return hamburger()">
+						Home
+					</a>
+				</li>
+				<li class="nav-respo__item">
+					<a href="#about" class="nav-respo__link" onclick="return hamburger()">
+						About
+					</a>
+				</li>
+				<li class="nav-respo__item">
+					<a href="#theme" class="nav-respo__link" onclick="return hamburger()">
+						Themes
+					</a>
+				</li>
+				<li class="nav-respo__item">
+					<a href="#prizes" class="nav-respo__link" onclick="return hamburger()">
+						Prizes
+					</a>
+				</li>
+				<li class="nav-respo__item">
+					<a href="#speaker" class="nav-respo__link" onclick="return hamburger()">
+						Speakers
+					</a>
+				</li>
+				<li class="nav-respo__item">
+					<a href="#faq" class="nav-respo__link" onclick="return hamburger()">
+						FAQs
+					</a>
+				</li>
+				<li class="nav-respo__item">
+					<a href="#sponsors" class="nav-respo__link" onclick="return hamburger()">
+						Our Sponsors
+					</a>
+				</li>
+				<li class="nav-respo__item">
+					<a href="team.html" class="nav-respo__link" onclick="return hamburger()">
+						Our Team
+					</a>
+				</li>
+				<li class="nav-respo__item">
+					<a href="#follow" class="nav-respo__link" onclick="return hamburger()">
+						Follow Us
+					</a>
+				</li>
 			</ul>
-		</nav> -->
+		</div>
+	</div>
+	<div class="navigation">
+		<nav class="navigation__nav">
+			<ul class="navigation__list">
+				<li class="navigation__item">
+					<!-- <span>01</span>  -->
+					<a href="#about" class="navigation__link">
+						About
+					</a>
+				</li>
+				
+				<li class="navigation__item">
+					<!-- <span>01</span>  -->
+					<a href="#theme" class="navigation__link">
+						Theme
+					</a>
+				</li>
+				<li class="navigation__item">
+					<!-- <span>01</span>  -->
+					<a href="#prizes" class="navigation__link">
+						Prizes
+					</a>
+				</li>
+				
+				<li class="navigation__item navigation__item--home">
+					<!-- <span>01</span>  -->
+					<a href="#home" class="navigation__link">
+						<img src="./img/423483-200.png" alt="">			   
+					</a>
+				</li>
+				<li class="navigation__item">
+					<!-- <span>01</span>  -->
+					<a href="#speaker" class="navigation__link">
+						Speakers
+					</a>
+				</li>
+				
+				
+				<li class="navigation__item">
+					<!-- <span>01</span>  -->
+					<a href="#sponsors" class="navigation__link">
+						Sponsors
+					</a>
+				</li>
+				<li class="navigation__item">
+					<!-- <span>01</span>  -->
+					<a href="team.html" class="navigation__link">
+						Team
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</div> 
 	
-	<header class="home-section">
+	<header id="home" class="home-section">
 		<div class="home__container">
-			<img src="./img/494322.jpg" alt="hackofiesta">
+			<img src="./img/logo.png" alt="hackofiesta">
 			<div class="home__container--text">
-				<h1>hackofiest<span>a</span></h1>
-				<p>Lorem ipsum dolor sit amet consectet</p>
+				<h1>hackOfiest<span>a</span></h1>
+				<p>
+					&#128468; 16 April - 18April 2021</p>
 			</div>
+			<!-- &#128197 &#128467; -->
 
 			<div class="home__button">
-				<a href="" class="cta-button-hero">Register Now</a>
+				<div 
+					class="apply-button" 
+					data-hackathon-slug="hackofiesta" 
+					data-button-theme="dark-inverted"
+					style="height: 44px; width: 312px;"
+				></div>
+				<!-- <a href="" class="cta-button-hero">Register Here</a> -->
 				<a href="" class="cta-button-hero">Join Discord</a>
 			</div>
 		</div>
+
+		<div class="home__countdown">
+					
+			<div class="countDown__overlay">
+				<!--  -->
+				<div class="countDown__container">
+					<h3 class="countDown__heading">
+						Coming Soon
+					</h3>
+
+					<div class="countDown__numbers cd100">
+						<div>
+							<span class="days">35</span>
+							<span>Days</span>
+						</div>
+
+						<div>
+							<span class="hours">17</span>
+							<span >Hours</span>
+						</div>
+
+						<div>
+							<span class="minutes">50</span>
+							<span>Minutes</span>
+						</div>
+
+						<div>
+							<span class="seconds">39</span>
+							<span>Seconds</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
 
 		<div class="home__scroll">
 			<!-- <img src="./img/86338b44-cf94-4db3-b04c-5b817166b2d9.jpg" alt=""> -->
@@ -103,9 +279,9 @@
 		
 
 
-		<section class="about-section">
+		<section id="about" class="about-section">
 			
-			<h1 class="heading-secondary" >About</h1>
+			<h1 class="heading-secondary " >About</h1>
 			
 			<div class="about__background">
 				<img src="./img/Anti Grvty _ Creative Digital Lab Focused on Creating Unique Human Experience.-1.svg" alt="">
@@ -117,15 +293,27 @@
 				
 				<div class="about__container--text">
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ipsum impedit corporis nemo reprehenderit consequatur quam earum natus dolor ab! Autem nulla in fugit incidunt eos veniam neque ratione exercitationem.
-						em ipsum impedit corporis nemo reprehenderit consequatur quam earum natus dolor ab! Autem nulla in fugit incidunt eos veniam neque ratione exercitationemem.em ipsum impedit corporis nemo reprehenderit consequatur quam earum natus dolor ab! Autem nulla in fugit incidunt eos veniam neque ratione exercitatem ipsum impedit corporis nemo reprehenderit consequatur quam earum natus dolor ab! Autem nulla in fugit incidunt eos veniam neque ratione exercitat ionem
+						Hack-o-Fiesta is an event organized by IIIT Lucknow, that lasts for 3 days and the students participate in a team of 3-5 like-minded individuals to utilize new technologies and hack together tons of code from different sources to achieve their goal. Not only do programmers get the satisfaction of creating a useful product during the hackathon, but once the time runs out all participants come together and present their creations to a panel of judges who then give points based on the idea, execution, and presentation.
+						<br><br>
+						With over 1500 students from 110+ technical colleges all over the world, it is a glorious stage for sharing tech-related products and services among some of the best technical minds across the world, all with a common goal - to advance our technology to the NEXT LEVEL. With coverage from leading national newspapers to countless social media accounts, technical forums, and blogs, it is a massive opportunity for interaction with some of the brightest young minds of our country and its impact is truly endless.
+
 					</p>
 				</div>
 			</div>
+
+			<!-- <div class="about__footerImg">
+				<div class="typewriter">
+					<div class="slide"><i></i></div>
+					<div class="paper"></div>
+					<div class="keyboard"></div>
+				</div>    
+			</div> -->
+			
+
 		</section>
 
 
-		<section class="theme--section">
+		<section id="theme" class="theme--section">
 
 			<h1 class="heading-secondary heading-secondary--white" >Theme</h1>
 
@@ -133,50 +321,50 @@
 				<div class="theme__container--card">
 					<div class="theme__item">
 						<div class="theme__item--details">
-							<h4>Theme Name</h4>
+							<h4>Blockchain</h4>
 						</div>
 						<div class="theme__item--img">
-							<img src="./img/coding.svg" />
+							<img src="./img/themes/blockchain-2.svg" width="80%">
 						</div>
 					</div>
 				</div>
 				<div class="theme__container--card">
 					<div class="theme__item">
 						<div class="theme__item--details">
-							<h4>Themel Name</h4>
+							<h4>Cloud Computing</h4>
 						</div>
 						<div class="theme__item--img">
-							<img src="./img/undraw_Firmware_jw6u.svg" />
+							<img src="./img/themes/cloud-computing-svgrepo-com.svg" width="80%"/>
 						</div>
 					</div>
 				</div>
 				<div class="theme__container--card">
 					<div class="theme__item">
 						<div class="theme__item--details">
-							<h4>Theme Name</h4>
+							<h4>Health Care</h4>
 						</div>
 						<div class="theme__item--img">
-							<img src="./img/undraw_mobile_development_8gyo.svg" />
+							<img src="./img/themes/healthcare.jpg" height="100%"/>
 						</div>
 					</div>
 				</div>
 				<div class="theme__container--card">
 					<div class="theme__item">
 						<div class="theme__item--details">
-							<h4>Theme Name</h4>
+							<h4>Education</h4>
 						</div>
 						<div class="theme__item--img">
-							<img src="./img/undraw_programming_2svr.svg" />
+							<img src="./img/themes/undraw_Firmware_jw6u.svg" />
 						</div>
 					</div>
 				</div>
 				<div class="theme__container--card">
 					<div class="theme__item">
 						<div class="theme__item--details">
-							<h4>Theme Name</h4>
+							<h4>Machine Learning / AI</h4>
 						</div>
 						<div class="theme__item--img">
-							<img style="height: 10rem;" src="./img/ML.svg" />
+							<img style="height: 10rem;" src="./img/themes/ML.svg" />
 						</div>
 					</div>
 				</div>
@@ -184,26 +372,26 @@
 				<div class="theme__container--card">
 					<div class="theme__item--2">
 						<div class="theme__item--2--details">
-							<h4>Theme Name</h4>
+							<h4>Open Innovation</h4>
 						</div>
-						<img src="./img/openi.png" />
+						<img src="./img/themes/openi.png" />
 					</div>
 				</div>
 
 				<div class="theme__container--card">
 					<div class="theme__item">
 						<div class="theme__item--details">
-							<h4>Theme Name</h4>
+							<h4>Game Development</h4>
 						</div>
 						<div class="theme__item--img">
-							<img style="height: 8rem;" src="./img/cyber-security.svg" />
+							<img style="height: 8rem;" src="./img/themes/gaming.png" />
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section class="prize--section">
+		<section id="prizes" class="prize--section">
 
 			<h1 class="heading-secondary" >Prizes</h1>
 
@@ -214,7 +402,6 @@
 						<figcaption>
 						  <h2>1st  <span> Prize</span></h2>
 						</figcaption>
-						<a href="#"></a>
 					  </figure>
 				</div>
 				<div class="prize__card">
@@ -223,7 +410,6 @@
 						<figcaption>
 						  <h2>2nd  <span> Prize</span></h2>
 						</figcaption>
-						<a href="#"></a>
 					  </figure>
 				</div>
 				<div class="prize__card">
@@ -231,8 +417,7 @@
 						<img src="./img/trophy.svg" alt="sample34" />
 						<figcaption>
 						  <h2>3rd  <span> Prize</span></h2>
-						</figcaption>
-						<a href="#"></a>
+						</figcaption>	
 					  </figure>
 				</div>
 			</div>
@@ -242,8 +427,7 @@
 			</div> -->
 		</section>
 
-
-		<section class="speaker--section">
+		<section id="speaker" class="speaker--section">
 
 			<h1 class="heading-secondary heading-secondary--white" >Speakers</h1>
 
@@ -434,14 +618,231 @@
 				</div>
 			</div>
 		</section>
-		
-		<section class="teamSponsor--section">
+
+
+		<div class="engine__img">
+			<svg xmlns="http://www.w3.org/2000/svg" width="290" height="200" x="0px" y="0px" viewBox="0 0 498.4 498.4">
+				<g id="wheel-1">
+				  <path style="fill: #919191" d="M235.6,213.6l28.8-28.8l-11.2-11.2c7.2-11.2,12.8-24,15.2-36.8h16V96h-16c-2.4-12.8-8-25.6-15.2-36.8
+								  l11.2-10.4L235.6,20l-11.2,11.2c-11.2-7.2-24-12.8-36.8-15.2V0h-40.8v16c-12.8,2.4-25.6,8-36.8,15.2L98.8,20L70,48.8L81.2,60
+								  C74,71.2,68.4,84,66,96.8H50v40.8h16c2.4,12.8,8,25.6,15.2,36.8L70,184.8l28.8,28.8l11.2-11.2c11.2,7.2,24,12.8,36.8,15.2v16h40.8
+								  v-16c12.8-2.4,25.6-8,36.8-15.2L235.6,213.6z M138,145.6c-16-16-16-41.6,0-57.6s41.6-16,57.6,0s16,41.6,0,57.6S154,161.6,138,145.6z
+								  " />
+				  <path style="fill: #5a5a5a" d="M253.2,173.6c7.2-11.2,12.8-24,15.2-36.8h16V96h-16c-2.4-12.8-8-25.6-15.2-36.8l11.2-10.4l-13.6-13.6
+								  l-54.4,53.6c15.2,16,15.2,41.6-0.8,56.8c-16,16-40.8,16-56.8,0.8L85.2,200l13.6,13.6l11.2-11.2c11.2,7.2,24,12.8,36.8,15.2v16h40.8
+								  v-16c12.8-2.4,25.6-8,36.8-15.2l11.2,11.2l28.8-28.8L253.2,173.6z" />
+				</g>
+				<g id="wheel-2">
+				  <path style="fill: #086d3e" d="M423.6,279.2l-34.4-34.4l-13.6,13.6c-13.6-8.8-28-15.2-43.2-17.6v-19.2h-48v19.2
+								  c-15.2,3.2-29.6,8.8-43.2,17.6l-13.6-13.6l-34.4,34.4l13.6,13.6c-8.8,13.6-15.2,28-17.6,43.2H170v48h19.2
+								  c3.2,15.2,8.8,29.6,17.6,43.2l-13.6,13.6l34.4,34.4l13.6-13.6c13.6,8.8,28,15.2,43.2,17.6v19.2h48v-19.2
+								  c15.2-3.2,29.6-8.8,43.2-17.6l13.6,13.6l34.4-34.4L410,427.2c8.8-13.6,15.2-28,17.6-43.2h19.2v-48h-19.2
+								  c-3.2-15.2-8.8-29.6-17.6-43.2L423.6,279.2z M342.8,393.6c-18.4,19.2-49.6,19.2-68,0c-18.4-18.4-18.4-49.6,0-68
+								  c19.2-18.4,49.6-18.4,68,0C361.2,344.8,361.2,375.2,342.8,393.6z" />
+				  <path style="fill: #003f1f" d="M375.6,258.4c-13.6-8.8-28-15.2-43.2-17.6v-19.2h-48v19.2c-15.2,3.2-29.6,8.8-43.2,17.6l-13.6-13.6
+								  l-16.8,16.8l64,64c19.2-18.4,48.8-18.4,67.2,0.8c18.4,18.4,18.4,48.8,0.8,67.2l64,64l16.8-16.8L410,427.2
+								  c8.8-13.6,15.2-28,17.6-43.2h19.2v-48h-19.2c-3.2-15.2-8.8-29.6-17.6-43.2l13.6-13.6l-34.4-34.4L375.6,258.4z" />
+				</g>
+				<g id="wheel-3">
+				  <path style="fill: #ee462c" d="M448.4,155.2v-24h-9.6c-1.6-8-4.8-15.2-8.8-21.6l6.4-6.4l-16.8-16.8l-6.4,6.4
+								  c-6.4-4-13.6-7.2-21.6-8.8v-9.6h-24V84c-8,1.6-15.2,4.8-21.6,8.8l-6.4-6.4l-18.4,16.8l6.4,6.4c-4,6.4-7.2,13.6-8.8,21.6h-9.6v24h9.6
+								  c1.6,8,4.8,15.2,8.8,21.6l-6.4,6.4L338,200l6.4-6.4c6.4,4,13.6,7.2,21.6,8.8v9.6h24v-9.6c8-1.6,15.2-4.8,21.6-8.8l6.4,6.4l16.8-16.8
+								  l-4.8-6.4c4-6.4,7.2-13.6,8.8-21.6H448.4z M378.8,167.2c-13.6,0-24-10.4-24-24s10.4-24,24-24s24,10.4,24,24S392.4,167.2,378.8,167.2
+								  z" />
+				  <path style="fill: #921009" d="M438.8,131.2c-1.6-8-4.8-15.2-8.8-21.6l6.4-6.4l-16.8-16.8l-6.4,6.4c-6.4-4-13.6-7.2-21.6-8.8v-9.6
+								  h-12v44.8c12.8,0,24,11.2,24,24s-10.4,24-24,24V212h12v-9.6c8-1.6,15.2-4.8,21.6-8.8l6.4,6.4l16.8-16.8l-6.4-6.4
+								  c4-6.4,7.2-13.6,8.8-21.6h9.6v-24H438.8z" />
+				</g>
+			  </svg>
+		</div>
+
+
+		<section id="faq" class="faq--section">
+			<div class="faq__container">
+				<h1 class="heading-secondary heading-secondary--white" >FAQs</h1>
+				<div class="accordion">
+				  <div class="accordion-item">
+					<button id="accordion-button-1" aria-expanded="false"><span class="accordion-title"> What is the team size?</span><span class="icon" aria-hidden="true"></span></button>
+					<div class="accordion-content">
+					  <p>The team size can range from 2 - 4</p>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">When will Hackofiesta be inaugurated and the submission timeline?</span><span class="icon" aria-hidden="true"></span></button>
+					<div class="accordion-content">
+					  <p>The Hackofiesta hackathon will begin on 16th April 9:00 pm and the projects must be submitted by 18th April 9:00 am.</p>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<button id="accordion-button-3" aria-expanded="false"><span class="accordion-title"> What are the challenges to be solved by the Projects?	</span><span class="icon" aria-hidden="true"></span></button>
+					<div class="accordion-content">
+					  <p>Read more about our theme.</p>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">Who can attend?</span><span class="icon" aria-hidden="true"></span></button>
+					<div class="accordion-content">
+					  <p>Beginners, pros, literally everyone. Anyone with a passion for learning, or primarily, undergraduate and highschool programmers are welcome to attend. Even if you can’t code, we can teach you or you can help out in the hackathon.</p>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What can I build?</span><span class="icon" aria-hidden="true"></span></button>
+					<div class="accordion-content">
+					  <p>Possibly something that resonates with the theme of the event. It can be a website, software, an applet or maybe even a piece of hardware. We’d love to see anything that solves a social problem or goes with our agenda.	</p>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Can I start working on my hack before the event?</span><span class="icon" aria-hidden="true"></span></button>
+					<div class="accordion-content">
+					  <p>No. In the interest of fairness, students should not be working on their projects before Hackofiesta begins and we do not allow participants to work on pre-existing projects. However, you can familiarize yourself with all the tools and technologies you intend to use beforehand.	</p>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">Is there a provision of partial selection of members of team?</span><span class="icon" aria-hidden="true"></span></button>
+					<div class="accordion-content">
+					  <p>No, there is no such provision. Selection of a team is done considering all it's members. However the team members can apply as individuals and then form a team after selection.</p>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What if I don't want to present my hack?</span><span class="icon" aria-hidden="true"></span></button>
+					<div class="accordion-content">
+					  <p>Unfinished or unimpressive (so you think) projects should be presented anyway! Presenting your hack gives you a chance to be proud of what you’ve done, and a constructive perspective of where you should be headed next.	</p>
+					</div>
+				  </div>
+				  <div class="accordion-item">
+					<button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">What if I don't know how to code?					</span><span class="icon" aria-hidden="true"></span></button>
+					<div class="accordion-content">
+					  <p>That is not a problem! A great way to learn how to code is by attending a hackathon. It's an event for like-minded people to share what they are interested in and teach each-other what they are passionate about, whether it's coding, electronics or anything else you want to know about. You never know what new skill you might pick up! You can also ask specific questions to our mentors and in the Discord server, where people are there to help. Plus we have planned numerous workshops and talks for you guys to make the learning process better.	</p>
+					</div>
+				  </div>
+				</div>
+			  </div>
+		</section>
+		<section class="sponsor--section" id="sponsors">
+
+			<div class="sponsor__heading">
+				<h1 class="heading-secondary heading-secondary--white">Our Sponsors</h1>
+			</div>
+	
+			<div class="sponsor__container">
+				<h2 class="tier-heading">Associate</h2>
+				<div class="sponsor__row">
+					<a href="https://www.anfeidrol.com/" target="_blank">
+					<div class="sponsor__card" style="object-fit: contain;height: unset;">
+						<img src="./img/sponsor/boredprog.jpg" style="width: 50%; padding: 1rem 0;" alt="">
+					</div>
+				</a>
+				</div>
+				
+			  <h2 class="tier-heading">Diamond</h2>
+				<div class="sponsor__row">
+					<a href="https://devfolio.co/" target="_blank">
+					<div class="sponsor__card">
+						<img src="./img/sponsor/Devfolio_Logo-Colored.png" alt="">
+					</div>
+					</a>
+				</div>
+				
+			  <h2 class="tier-heading">Platinum</h2>
+				<div class="sponsor__row">
+					<a href="https://matic.network/" target="_blank">
+						<div class="sponsor__card">
+							<img src="./img/sponsor/matic.png" alt="">
+						</div>
+					</a>
+					<a href="https://tezos.com/" target="_blank">
+						<div class="sponsor__card">
+							<img src="./img/sponsor/tezos.png" alt="">
+						</div>
+					</a>
+					<a href="https://www.portis.io/" target="_blank">
+						<div class="sponsor__card">
+							<img src="./img/sponsor/Portis_Logo-Colored_Black.png" alt="">
+						</div>
+					</a>
+					<a href="https://www.sashido.io/en/" target="_blank">
+						<div class="sponsor__card">
+							<img src="./img/sponsor/sashido-logo-for sites.png" alt="" style="width:18rem">
+						</div>
+					</a>
+				</div>
+				<h2 class="tier-heading">Gold</h2>
+				<div class="sponsor__row">
+					<a href="https://github.com/" target="_blank">
+					<div class="sponsor__card">
+						<img src="./img/sponsor/GitHub_Logo.png" alt="" style="width:18rem">
+					</div>
+				</a>
+				</div>
+				
+			  <h2 class="tier-heading">Silver</h2>
+				<div class="sponsor__row">
+					<a href="https://www.interviewcake.com/" target="_blank">
+						<div class="sponsor__card">
+							<img src="./img/sponsor/interviewCake.png" alt="">
+						</div>
+					</a>
+					<a href="https://balsamiq.com/" target="_blank">
+						<div class="sponsor__card">
+							<img src="./img/sponsor/balsamiq-logo-screen.png" alt="">
+						</div>
+					</a>
+					<a href="https://www.taskade.com/" target="_blank">
+						<div class="sponsor__card">
+							<img src="./img/sponsor/taskade.png" alt="">
+						</div>
+					</a>
+					<a href="https://www.dailybot.com/" target="_blank">
+						<div class="sponsor__card" style="background: white;">
+							<img src="./img/sponsor/dailybot_iso_logo_transparent.png" alt="">
+						</div>
+					</a>
+
+					<a href="https://givemycertificate.com/" target="_blank">
+					<div class="sponsor__card" style="background:white">
+					  <img src="./img/sponsor/GMC.png" alt="">
+				  	</div>
+					</a>
+				</div>
+				<div class="sponsor__row2">
+					<div class="sponsor__column">
+						<h3 class="tier-heading__small">Education Partner</h3>
+						<a href="https://www.inmovidutech.com/" target="_blank">
+							<div class="sponsor__card">
+								<img src="./img/sponsor/inmovidu_white_bg.jfif" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="sponsor__row2">
+					<div class="sponsor__column">
+						<h3 class="tier-heading__small">Blogger Outreach Partner</h3>
+						<a href="http://blogadda.com/" target="_blank" >
+							<div class="sponsor__card">
+								<img src="./img/sponsor/blogAdda2.png" style="height: 60%;" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="sponsor__column">
+						<h3 class="tier-heading__small">Online Media Partner</h3>
+							<a href="https://www.noticebard.com/" target="_blank" >
+							<div class="sponsor__card">
+								<img src="./img/sponsor/NoticeBard-logo.png" alt="">
+							</div>
+							</a>
+					</div>
+				</div>
+				<div id="team"></div>
+			</div>
+	
+		</section>
+		<section class="teamSponsor--section" >
 			<div class="teamSponsor__container">
 
 				<div class="teamSponsor__team">
 					<div class="teamSponsor__team--text">
-						<h1 class="heading-tertiary">Team </h1>
-						<p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+						<h1 class="heading-tertiary">Our Team</h1>
+						<p>Meet the family behind the Technical aura</p>
 					</div>
 					<div class="teamSponsor__team--img">
 						<img src="./img/team.jpg" alt="">
@@ -450,19 +851,20 @@
 							<i class="fas fa-arrow-right" aria-hidden="true">  </i>
 						</a>
 					</div>
+					
 				</div>
-
-				<div class="teamSponsor__sponsors">
+				
+				<!-- <div class="teamSponsor__sponsors">
 					<div class="teamSponsor__sponsors--text">
 						<h1 class="heading-tertiary">Sponsors</h1>
-						<p>Lorem ipsum dolor sit amet consectetur adipisic</p>
+						<p>The organizations that helped us make our visions into reality</p>
 					</div>
 					<div class="teamSponsor__sponsors--img">
 						<img src="./img/workshops.jpg" alt="">	
-						<a href="" class="teamSponsor--button">
+						<a href="./sponsors.html" class="teamSponsor--button">
 							<i class="fas fa-arrow-right" aria-hidden="true">  </i>
 						</a>
-					</div>
+					</div> -->
 				</div>
 
 			</div>
@@ -470,53 +872,73 @@
 
 	</main>
 
-	<footer class="new_footer_area bg_color">
-  <div class="new_footer_top">
-      <div class="container footer__container">
+	<footer class="new_footer_area bg_color" id="follow">
+		<div class="new_footer_top">
+			<div class="container footer__container">
 
-		<div class="footer__row footer__row--1">
-			<div class="footer__row--img">
-				<img src="./img/494322.jpg" alt="hackofiesta logo">
+				<div class="footer__row footer__row--1">
+					<div class="footer__row--img">
+						<img src="./img/logo.png" alt="hackofiesta logo">
+					</div>
+					<div class="footer__row--text">
+						<h1>hackofiest<span>a</span></h1>
+					</div>
+				</div>
+
+				<div class="row footer__row">
+					<div class="col-lg-3 col-md-6">
+						<div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
+							<h3 class="f-title f_600 t_color f_size_18">Follow Us!</h3>
+							<div class="f_social_icon">
+								<a href="https://www.facebook.com/hackofiesta/about/?ref=page_internal" class="fab fa-facebook"></a>
+								<a href="https://twitter.com/hackofiesta?lang=en" class="fab fa-twitter"></a>
+								<a href="#" class="fab fa-linkedin"></a>
+								<!-- <a class="fab fa-envelope"> </a> -->
+								<a href="mailto:hack@iiitl.ac.in" class="fab fa-envelope"></a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="footer__row--text">
-				<h1>hackofiest<span>a</span></h1>
+			<div class="footer_bg">
+				<div class="footer_bg_one"></div>
+				<div class="footer_bg_two"></div>
 			</div>
 		</div>
-
-          <div class="row footer__row">
-            <div class="col-lg-3 col-md-6">
-                  <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                      <h3 class="f-title f_600 t_color f_size_18">Follow Us!</h3>
-                      <div class="f_social_icon">
-                          <a href="https://www.facebook.com/hackofiesta/about/?ref=page_internal" class="fab fa-facebook"></a>
-                          <a href="https://twitter.com/hackofiesta?lang=en" class="fab fa-twitter"></a>
-                          <a href="#" class="fab fa-linkedin"></a>
-                          <!-- <a class="fab fa-envelope">href="mailto:hack@iiitl.ac.in" </a> -->
-						  <a href="#" class="fab fa-envelope"></a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="footer_bg">
-          <div class="footer_bg_one"></div>
-          <div class="footer_bg_two"></div>
-      </div>
-  </div>
-  <div class="footer_bottom">
-      <div class="container">
-          <div class="row align-items-center">
-              <div class="col-lg-6 col-sm-7">
-                  <p class="mb-0 f_400">© Hackofiesta 2021 All rights reserved.</p>
-              </div>
-          </div>
-      </div>
-  </div>
-</footer>
+		<div class="footer_bottom">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-6 col-sm-7">
+						<p class="mb-0 f_400">© Hackofiesta 2021 All rights reserved.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 	<!-- <script src=".js/anime.min.js"></script> -->
 	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
 	<script src="./js/home.js"></script>
+	<script src="./js/jquery/jquery-3.2.1.min.js"></script>
+	<script src="./js/countdowntime.js"></script>
+	<script>
+		$('.cd100').countdown100({
+			/*Set Endtime here*/
+			/*Endtime must be > current time*/
+			endtimeYear: 2021,
+			endtimeMonth: 4,
+			endtimeDate: 16,
+			endtimeHours: 21,
+			endtimeMinutes: 0,
+			endtimeSeconds: 0,
+			timeZone: "" 
+			// ex:  timeZone: "America/New_York"
+			//go to " http://momentjs.com/timezone/ " to get timezone
+		});
+		
+	</script>
+
+	<script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
 </body>
 </html>

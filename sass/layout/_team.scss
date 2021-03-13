@@ -1,0 +1,151 @@
+.team,.sponsor{
+    
+    &--section{
+        // background-color: aquamarine;
+
+        width: 90vw;
+        @include marginCenter;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__heading{
+
+        @include marginCenter;
+
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        
+        .tier-heading{
+            margin-top:2rem;
+            display: block;
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 900;
+            line-height: 0;
+            letter-spacing: 0.4rem;
+            text-transform: uppercase;
+            color: var(--color-tier);
+            &__small{
+                margin-top:1rem;
+                text-align: center;
+                display: block;
+                font-size: 1.6rem;
+                font-weight: 900;
+                letter-spacing: 0.2rem;
+                text-transform: uppercase;
+                color: var(--color-tier);
+            }
+        }
+    }
+
+    &__row{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding-bottom: 1.2rem;
+    }
+    &__row2{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        overflow: hidden;
+        padding-bottom: 1.2rem;
+    }
+    &__column{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__card{
+        height: 23rem;
+        width: 18rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: $color-primary-black;
+        margin: 0.8rem;
+        transition: all 0.5s;
+
+        border-radius: 2px;
+
+        &-img{
+            margin: 1rem;
+            img{    
+                border-radius: 100%;
+                height: 11rem;
+                width: 11rem;
+                object-fit: cover;
+            }
+        }
+
+        &-details{
+            margin: 1rem;
+
+            h4{
+                color: rgb(255, 255, 255);
+                font-family: 'Poppins';
+                font-size: 1.1rem;
+            }
+            h6{
+                color: rgb(255, 255, 255);
+                font-family: 'Poppins';
+                font-size: 0.9rem;
+                margin: 0.6rem;
+            }
+        }
+
+        &--links{
+            margin: 1rem;
+
+            & > * {
+                margin: 0.4rem;
+                font-size: 1.7rem;
+                color: white;
+            }
+        }
+
+
+        &:hover{
+            box-shadow: rgba(0,0,0, 0.25) 0px 14px 28px, rgba(  0,0,0, 0.22) 0px 10px 10px;
+            transform: scale(1.1);
+            // box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+            
+            // box-shadow: rgba($0,0,0, 0.4) -5px 5px, rgba($0,0,0, 0.3) -10px 10px, rgba($0,0,0, 0.2) -15px 15px, rgba($0,0,0, 0.1) -20px 20px, rgba($0,0,0, 0.05) -25px 25px;
+
+        }
+    }
+}
+
+.sponsor{
+    &__card{
+        height: 6rem;
+        max-height: fit-content;
+        width: 20rem;
+        background-color: white;
+        border-radius: 5px;
+        img{
+            width: 16rem;
+        }
+    }
+}
+.team__heading{
+    margin-bottom: 3rem !important;
+    margin-top: 6rem !important;
+}
+@media only screen and (max-width: $mobile-device) {
+    html {
+        font-size: 12px !important;
+    }
+}

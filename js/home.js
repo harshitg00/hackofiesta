@@ -1,3 +1,4 @@
+var mobileDevice = 768;
 var fullAnimation = (function() {
   
 	var bigDarkRectangle = anime.timeline({
@@ -80,9 +81,10 @@ var fullAnimation = (function() {
   })()
   
   // Start on load
-  window.onload = function() {
-	  fullAnimation.init()
-  }
+window.onload = function() {
+	fullAnimation.init();
+// 	hideLoader();
+}
   
   // Re-run
 //   document.getElementById('run-trigger').addEventListener('click', function(e) {
@@ -117,3 +119,48 @@ let trans = () => {
 		document.documentElement.classList.remove('transition')
 	}, 1000)
 }
+
+
+/////////////////////faq////////////////////////////
+const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+
+
+
+const wheel1 = document.getElementById("wheel-1");
+const wheel2 = document.getElementById("wheel-2");
+const wheel3 = document.getElementById("wheel-3");
+
+gsap.to([wheel1, wheel2, wheel3], 1, {
+  transformOrigin: "center center",
+  rotation: 360,
+  ease: Power0.easeOut,
+  repeat: -1
+});
+
+hamburger = (event) => {
+	if(event)
+	event.preventDefault();
+	document.querySelector('.btn-hamburger').classList.toggle('open');
+	document.querySelector('.menu').classList.toggle('menu--open');
+	document.querySelector('html').classList.toggle('stop-scrolling');
+}
+
+
+// function hideLoader(){
+// 	document.querySelector('#loading').style.display = "none";
+// }

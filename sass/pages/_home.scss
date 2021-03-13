@@ -2,26 +2,30 @@
     position: absolute;
     left: 68%;
     // left: 60%;
+    
 }
 
 .about {
 
 &-section {
     position: relative;
-    height: 100vh;
+    // height: 100vh;
 
     clip-path: polygon(0% 0%,100% 10%,100% 100%,0% 90%);
+    transform:scaleZ(1);
     // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
 
     width: 100vw;
     background-color: #e5eeff;
     margin-top: 4rem;
+    margin-bottom: 1rem;
 
     text-align: center;
 
     h1{
-    margin-top: 6rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
     }
 
 }
@@ -40,9 +44,16 @@
     width: 80%;
     margin:0 2rem ;
     text-align: center;
-    font-family: Evolve Sans;
-    font-size: 1.2rem;
-    font-weight: 100;
+    font-family: 'Assistant';
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+    color: #51555E;
+
+    p{    
+        margin-bottom: 4rem;
+    }
+
     }
 }
 
@@ -84,13 +95,6 @@
         background-repeat: repeat;
         text-align: center;
     
-        h1{
-            // color: white;
-        }
-
-        // clip-path: polygon(0 0, 100% 5%, 10% 10%, 0% 100%);
-        // background-color: #fff;
-        
     }
 
     &__container {
@@ -98,17 +102,13 @@
         width: 80%;
         @include marginCenter;
         margin-top: 3rem;
-
+        margin-bottom: 2rem;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
 
         &--card {
             margin: 1rem;
-
-            &:not(:last-child){
-
-            }
 
             &--2{
                 

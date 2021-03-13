@@ -34,6 +34,7 @@ background: linear-gradient(45deg, rgba(39,142,165,1) 0%, rgba(40,199,250,1) 9%,
     background-image: linear-gradient(to right, $color-primary-black,$color-grey-dark);
     -webkit-background-clip: text;
     color: transparent;
+    
     letter-spacing: .2rem;
     transition: all .2s;
 
@@ -43,7 +44,8 @@ background: linear-gradient(45deg, rgba(39,142,165,1) 0%, rgba(40,199,250,1) 9%,
     }
 
     &--white{
-        color: white;
+        color: var(--color-heading);
+        // color: white;
     }
 }
 
@@ -57,7 +59,7 @@ background: linear-gradient(45deg, rgba(39,142,165,1) 0%, rgba(40,199,250,1) 9%,
 // CHEKCBOX DARK THEME///////////////////////
 
 .darktheme{
-    z-index: 10;
+    z-index: 5000;
     box-sizing: border-box;
     position: fixed;
     top: 85%;
@@ -81,52 +83,497 @@ background: linear-gradient(45deg, rgba(39,142,165,1) 0%, rgba(40,199,250,1) 9%,
 
 
 
-input[type=checkbox]{
+.input__dark[type=checkbox]{
 	height: 0;
 	width: 0;
 	visibility: hidden;
 }
 
-label {
+.label__dark {
     z-index: 1;
 	cursor: pointer;
 	text-indent: -9999px;
-	width: 1.8rem;
-	height: 1.8rem;
-	background: grey;
+	width: 1.7rem;
+	height: 1.7rem;
+	background: rgb(140, 226, 250);
+	background: rgb(0, 255, 208);
 	display: block;
-	border-radius: 25px;
+	border-radius: 50%;
 	position: relative;
 }
 
-label:after {
+.label__dark:after {
     
     z-index: 10;
 	content: '';
 	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 1.3rem;
-	height: 1.3rem;
+	top: 1px;
+	left: 1px;
+    @include centerAlign;
+	width: 1.5rem;
+	height: 1.5rem;
 	background: #fff;
 	border-radius: 90px;
     transition: 0.5s;
     background-position: center;
-    background-size: 80%;
+    background-size: 60%;
     background-repeat: no-repeat;
 }
 
-input:checked + label {
+.input__dark:checked + .label__dark {
     // background: $color-primary-black;
     background-color: $color-blue-light;
 }
 
-input:checked + label:after {
-	left: calc(100% - 5px);
-    transform: translateX(-100%);
+.input__dark:checked + .label__dark:after {
+	left: calc(100% - 1.3px);
+    transform: translateY(-50%) translateX(-100%);
     // transform:scale(0.7) ;
 }
 
-label:active:after {
-	width: 0.4rem;
+.label__dark:active:after {
+	width: 0.1rem;
+}
+
+
+
+
+.engine__img{
+    position: absolute;
+}
+
+
+// .about{
+
+//     &__footerImg{
+
+//         // background-color: rgb(188, 255, 94);
+
+//         height: 10rem;
+//         width: 10rem;
+//         @include marginCenter;
+
+//         .typewriter {
+//             --blue: #5C86FF;
+//             --blue-dark: #275EFE;
+//             --key: #fff;
+//             --paper: #EEF0FD;
+//             --text: #D3D4EC;
+//             --tool: #FBC56C;
+//             --duration: 3s;
+//             position: relative;
+//             animation: bounce var(--duration) linear infinite;
+//             .slide {
+//                 width: 92px;
+//                 height: 20px;
+//                 border-radius: 3px;
+//                 margin-left: 14px;
+//                 transform: translateX(14px);
+//                 background: linear-gradient(var(--blue), var(--blue-dark));
+//                 animation: slide var(--duration) ease infinite;
+//                 &:before,
+//                 &:after,
+//                 i:before {
+//                     content: '';
+//                     position: absolute;
+//                     background: var(--tool);
+//                 }
+//                 &:before {
+//                     width: 2px;
+//                     height: 8px;
+//                     top: 6px;
+//                     left: 100%;
+//                 }
+//                 &:after {
+//                     left: 94px;
+//                     top: 3px;
+//                     height: 14px;
+//                     width: 6px;
+//                     border-radius: 3px;
+//                 }
+//                 i {
+//                     display: block;
+//                     position: absolute;
+//                     right: 100%;
+//                     width: 6px;
+//                     height: 4px;
+//                     top: 4px;
+//                     background: var(--tool);
+//                     &:before {
+//                         right: 100%;
+//                         top: -2px;
+//                         width: 4px;
+//                         border-radius: 2px;
+//                         height: 14px;
+//                     }
+//                 }
+//             }
+//             .paper {
+//                 position: absolute;
+//                 left: 24px;
+//                 top: -26px;
+//                 width: 40px;
+//                 height: 46px;
+//                 border-radius: 5px;
+//                 background: var(--paper);
+//                 transform: translateY(46px);
+//                 animation: paper var(--duration) linear infinite;
+//                 &:before {
+//                     content: '';
+//                     position: absolute;
+//                     left: 6px;
+//                     right: 6px;
+//                     top: 7px;
+//                     border-radius: 2px;
+//                     height: 4px;
+//                     transform: scaleY(.8);
+//                     background: var(--text);
+//                     box-shadow: 0 12px 0 var(--text), 0 24px 0 var(--text), 0 36px 0 var(--text);
+//                 }
+//             }
+//             .keyboard {
+//                 width: 120px;
+//                 height: 56px;
+//                 margin-top: -10px;
+//                 z-index: 1;
+//                 position: relative;
+//                 &:before,
+//                 &:after {
+//                     content: '';
+//                     position: absolute;
+//                 }
+//                 &:before {
+//                     top: 0;
+//                     left: 0;
+//                     right: 0;
+//                     bottom: 0;
+//                     border-radius: 7px;
+//                     background: linear-gradient(135deg, var(--blue), var(--blue-dark));
+//                     transform: perspective(10px) rotateX(2deg);
+//                     transform-origin: 50% 100%;
+//                 }
+//                 &:after {
+//                     left: 2px;
+//                     top: 25px;
+//                     width: 11px;
+//                     height: 4px;
+//                     border-radius: 2px;
+//                     @include keyboard;
+//                     animation: keyboard var(--duration) linear infinite;
+//                 }
+//             }
+//         }
+
+//     }
+// }
+
+
+// @keyframes bounce {
+//     85%,
+//     92%,
+//     100% {
+//         transform: translateY(0);
+//     }
+//     89% {
+//         transform: translateY(-4px);
+//     }
+//     95% {
+//         transform: translateY(2px);
+//     }
+// }
+
+// @keyframes slide {
+//     5% {
+//         transform: translateX(14px);
+//     }
+//     15%,
+//     30% {
+//         transform: translateX(6px);
+//     }
+//     40%,
+//     55% {
+//         transform: translateX(0);
+//     }
+//     65%,
+//     70% {
+//         transform: translateX(-4px);
+//     }
+//     80%,
+//     89% {
+//         transform: translateX(-12px);
+//     }
+//     100% {
+//         transform: translateX(14px);
+//     }
+// }
+
+// @keyframes paper {
+//     5% {
+//         transform: translateY(46px);
+//     }
+//     20%,
+//     30% {
+//         transform: translateY(34px);
+//     }
+//     40%,
+//     55% {
+//         transform: translateY(22px);
+//     }
+//     65%,
+//     70% {
+//         transform: translateY(10px);
+//     }
+//     80%,
+//     85% {
+//         transform: translateY(0);
+//     }
+//     92%,
+//     100% {
+//         transform: translateY(46px);
+//     }
+// }
+
+// @keyframes keyboard {
+//     5%,
+//     12%,
+//     21%,
+//     30%,
+//     39%,
+//     48%,
+//     57%,
+//     66%,
+//     75%,
+//     84% {
+//         @include keyboard;
+//     }
+//     9% {
+//         @include keyboard(0, 2px);
+//     }
+//     18% {
+//         @include keyboard(3, 2px);
+//     }
+//     27% {
+//         @include keyboard(6, 12px);
+//     }
+//     36% {
+//         @include keyboard(8, 12px);
+//     }
+//     45% {
+//         @include keyboard(5, 2px);
+//     }
+//     54% {
+//         @include keyboard(1, 2px);
+//     }
+//     63% {
+//         @include keyboard(9, 12px);
+//     }
+//     72% {
+//         @include keyboard(2, 2px);
+//     }
+//     81% {
+//         @include keyboard(7, 12px);
+//     }
+// }
+
+#loading {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    opacity: 0.7;
+    background-color: #fff;
+    z-index: 100000000;
+    text-align: center;
+
+  .cssload-loader {
+      position: relative;
+      left: calc(50% - 31px);
+      width: 100px;
+      height: 100px;
+    margin:130px 0;
+      perspective: 780px;
+  }
+  
+  .cssload-inner {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+          -o-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+      border-radius: 50%;
+          -o-border-radius: 50%;
+          -ms-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          -moz-border-radius: 50%;
+    &.cssload-one {
+      left: 0%;
+      top: 0%;
+      animation: cssload-rotate-one 1.15s linear infinite;
+          -o-animation: cssload-rotate-one 1.15s linear infinite;
+          -ms-animation: cssload-rotate-one 1.15s linear infinite;
+          -webkit-animation: cssload-rotate-one 1.15s linear infinite;
+          -moz-animation: cssload-rotate-one 1.15s linear infinite;
+      border-bottom: 3px solid #5C5EDC;
+  }
+    &.cssload-two {
+      right: 0%;
+      top: 0%;
+      animation: cssload-rotate-two 1.15s linear infinite;
+          -o-animation: cssload-rotate-two 1.15s linear infinite;
+          -ms-animation: cssload-rotate-two 1.15s linear infinite;
+          -webkit-animation: cssload-rotate-two 1.15s linear infinite;
+          -moz-animation: cssload-rotate-two 1.15s linear infinite;
+      border-right: 3px solid rgba(76, 70, 101, 0.99);
+  }
+  &.cssload-three {
+      right: 0%;
+      bottom: 0%;
+      animation: cssload-rotate-three 1.15s linear infinite;
+          -o-animation: cssload-rotate-three 1.15s linear infinite;
+          -ms-animation: cssload-rotate-three 1.15s linear infinite;
+          -webkit-animation: cssload-rotate-three 1.15s linear infinite;
+          -moz-animation: cssload-rotate-three 1.15s linear infinite;
+      border-top: 3px solid rgb(233, 144, 138);;
+  }
+  
+  }
+  @keyframes cssload-rotate-one {
+      0% {
+          transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+      }
+      100% {
+          transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+      }
+  }
+  
+  @-o-keyframes cssload-rotate-one {
+      0% {
+          -o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+      }
+      100% {
+          -o-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+      }
+  }
+  
+  @-ms-keyframes cssload-rotate-one {
+      0% {
+          -ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+      }
+      100% {
+          -ms-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+      }
+  }
+  
+  @-webkit-keyframes cssload-rotate-one {
+      0% {
+          -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+      }
+      100% {
+          -webkit-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+      }
+  }
+  
+  @-moz-keyframes cssload-rotate-one {
+      0% {
+          -moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+      }
+      100% {
+          -moz-transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+      }
+  }
+  
+  @keyframes cssload-rotate-two {
+      0% {
+          transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+      }
+      100% {
+          transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+      }
+  }
+  
+  @-o-keyframes cssload-rotate-two {
+      0% {
+          -o-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+      }
+      100% {
+          -o-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+      }
+  }
+  
+  @-ms-keyframes cssload-rotate-two {
+      0% {
+          -ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+      }
+      100% {
+          -ms-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+      }
+  }
+  
+  @-webkit-keyframes cssload-rotate-two {
+      0% {
+          -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+      }
+      100% {
+          -webkit-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+      }
+  }
+  
+  @-moz-keyframes cssload-rotate-two {
+      0% {
+          -moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+      }
+      100% {
+          -moz-transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+      }
+  }
+  
+  @keyframes cssload-rotate-three {
+      0% {
+          transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+      }
+      100% {
+          transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+      }
+  }
+  
+  @-o-keyframes cssload-rotate-three {
+      0% {
+          -o-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+      }
+      100% {
+          -o-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+      }
+  }
+  
+  @-ms-keyframes cssload-rotate-three {
+      0% {
+          -ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+      }
+      100% {
+          -ms-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+      }
+  }
+  
+  @-webkit-keyframes cssload-rotate-three {
+      0% {
+          -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+      }
+      100% {
+          -webkit-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+      }
+  }
+  
+  @-moz-keyframes cssload-rotate-three {
+      0% {
+          -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+      }
+      100% {
+          -moz-transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+      }
+  }
 }

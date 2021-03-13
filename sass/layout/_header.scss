@@ -7,11 +7,18 @@
         @include marginCenter;
         height: 100vh;
         // text-align: center;
+
+            
+    // background-image: url("./../img/hero-back-illustration.svg");
+
+    // background-repeat: no-repeat;
+    // background-size: contain;
+
     }
     
     &__container {
         font-family: Evolve Sans Evo;
-        padding-top: 6rem;
+        padding-top: 5rem;
         width: auto;
     
     
@@ -19,7 +26,7 @@
         @include marginCenter;
         height: 6rem;
         width: 6rem;
-        clip-path: polygon(50% 25%,0 100%,100% 100%);
+        // clip-path: polygon(50% 25%,0 100%,100% 100%);
         }
     
         &--text{
@@ -46,7 +53,8 @@
         p{
             width: 80%;
             // background-color: rgb(247, 151, 151);
-            margin-top: 1rem;
+            margin-bottom: 1rem;
+            margin-top: 0.5rem;
             padding: 0.3rem 0;
             text-align: right;
         }
@@ -79,8 +87,25 @@
         // border-radius: 35%;
         // margin: 0 auto;
         @include centerAlign;
-        top: 90%;
+        top: 93%;
+        
+        animation-name: scrollBottom;
+        animation-duration: 2.2s;
+        animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
         }
     }
-    }
+
+
+
+
+}
     
+
+
+@keyframes scrollBottom {
+    0% { opacity: 0; }
+    10% { transform: translate(-50%,-30%); opacity: 1; }
+    100% { transform: translate(-50%,2%); opacity: 0;}
+  }
