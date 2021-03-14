@@ -83,7 +83,11 @@ var fullAnimation = (function() {
   // Start on load
 window.onload = function() {
 	fullAnimation.init();
+<<<<<<< HEAD
 	// hideLoader();
+=======
+// 	hideLoader();
+>>>>>>> 182cef775a34b0fa3264deb2382e3ca0b46c830d
 }
   
   // Re-run
