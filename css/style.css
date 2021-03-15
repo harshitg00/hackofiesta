@@ -102,7 +102,6 @@ h3, h4 {
   src: url("./../../css/stargaze/Stargaze Regular.otf"); }
 
 .cta-button-hero {
-  background-color: #00ACC1;
   background: #278ea5;
   background: linear-gradient(45deg, #278ea5 0%, #28c7fa 9%, #28a1c1 9%, #28a6c9 20%, #28c7fa 20%, #28b2db 29%, #28add3 30%, #2798b3 88%, #28c7fa 88%);
   font-size: 1.5rem;
@@ -393,9 +392,8 @@ h3, h4 {
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; }
-  .home__button > * {
-    margin: 1rem 2rem; }
+  justify-content: space-around;
+  align-items: center; }
 
 .home__scroll {
   font-family: 'FontAwesome';
