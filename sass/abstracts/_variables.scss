@@ -27,15 +27,16 @@ $mobile-device: 768px;
     --color-navbg:#e5eeff;
     --color-faq:#7288a2;
     --color-tier: white;
+
+    --pink: #e5eeff;
+    --white: #323438;
+
+
     .label__dark:after {
         background-image: url("./../../img/sun.svg");
         // background-size: ;
     }
 }
-
-// html[data-theme='dark'] {
-// }
-
 
 html[data-theme='light'] {
     --color-background:#e5eeff;
@@ -48,6 +49,8 @@ html[data-theme='light'] {
     --color-faq:#323438;
     --color-tier: #424344;
 
+    --white: #e5eeff;
+    --pink: #323438;
         
     .label__dark:after {
         background-image: url("./../../img/moon.svg");
