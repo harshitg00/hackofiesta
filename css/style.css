@@ -102,6 +102,19 @@ h3, h4 {
   src: url("./../../css/stargaze/Stargaze Regular.otf"); }
 
 .cta-button-hero {
+  background-color: #00ACC1;
+  background: #278ea5;
+  background: linear-gradient(45deg, #278ea5 0%, #28c7fa 9%, #28a1c1 9%, #28a6c9 20%, #28c7fa 20%, #28b2db 29%, #28add3 30%, #2798b3 88%, #28c7fa 88%);
+  font-size: 1.5rem;
+  height: 44px;
+  width: 212px;
+  color: #fff;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 5px 5px 1rem var(--color-textShadow-2);
   transition: all 0.3s; }
   .cta-button-hero:hover {
     transform: scale(1.03);
