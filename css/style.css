@@ -106,8 +106,8 @@ h3, h4 {
   src: url("./../../css/stargaze/Stargaze Regular.otf"); }
 
 .cta-button-hero {
-  background: #28c7fa;
-  font-size: 1.5rem;
+  background-color: #3770FF;
+  padding: 0.3rem 2rem;
   height: 44px;
   width: 212px;
   color: #fff;
