@@ -108,6 +108,7 @@ h3, h4 {
 
 .cta-button-hero {
   background-color: #3770FF;
+  font-size: 1.2rem;
   padding: 0.3rem 2rem;
   height: 44px;
   width: 212px;
@@ -589,6 +590,10 @@ button.fancy {
       text-shadow: 2px 2px 100px var(--color-textShadow); }
       .home__container--text h1 span {
         text-shadow: 1px 1px 100px #ffffff; }
+      .home__container--text h1 sup {
+        position: absolute;
+        font-size: 2rem;
+        text-shadow: 0px 1px 100px #ffffff; }
     .home__container--text p {
       width: 80%;
       margin-bottom: 1rem;
@@ -836,14 +841,19 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   align-content: center; }
 
 .prize--section {
-  background-color: #e5eeff;
   margin-top: 5rem;
   text-align: center;
   padding-bottom: 5rem;
-  position: relative; }
+  position: relative;
+  background-image: url("./../../img/confettin-bg-2.svg");
+  background-size: cover;
+  background-repeat: repeat; }
 
 .prize__container {
-  width: 90%;
+  background-image: url("./../../img/confettin-bg-2.svg");
+  background-size: cover;
+  background-repeat: repeat;
+  width: 85%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -852,8 +862,6 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 .prize__card {
   margin: 1rem;
-  border-radius: 2px;
-  box-shadow: 5px 5px 100px #a4a0a0;
   transition: all 0.3s; }
   .prize__card figure.snip1104 {
     font-family: "Raleway", Arial, sans-serif;
@@ -866,7 +874,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     background: #000000;
     color: #ffffff;
     text-align: center;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15); }
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 5px 10px rgba(99, 99, 99, 0.163); }
   .prize__card figure.snip1104 * {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -894,8 +903,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     right: 40px;
     display: inline-block;
     background: #000000;
-    -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
-    transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%) scale(0.9);
+    transform: skew(-10deg) rotate(-10deg) translate(0, -50%) scale(0.9);
     padding: 12px 5px;
     margin: 0;
     top: 50%;
@@ -923,6 +932,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     position: absolute;
     z-index: 1; }
   .prize__card figure.snip1104.blue {
+    border-radius: 10px;
     background: #123851; }
   .prize__card figure.snip1104.blue h2 {
     background: #0a212f; }
@@ -941,8 +951,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     transform: scale(1.02) translate(-50%, -50%); }
   .prize__card figure.snip1104:hover h2,
   .prize__card figure.snip1104.hover h2 {
-    -webkit-transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%);
-    transform: skew(-10deg) rotate(-10deg) translate(-150%, -50%); }
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%) scale(1);
+    transform: skew(-10deg) rotate(-10deg) translate(0, -50%) scale(1); }
   .prize__card figure.snip1104:hover:before,
   .prize__card figure.snip1104.hover:before {
     -webkit-transform: rotate(110deg) translateY(-150%);
@@ -951,6 +961,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .flip {
   box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-shadow: 0px 5px 10px rgba(99, 99, 99, 0.163);
   position: relative; }
   .flip > .front,
   .flip > .back {
@@ -961,6 +972,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   .flip > .front {
     transform: rotateY(0deg); }
   .flip > .back {
+    font-family: 'Roboto Mono';
     position: absolute;
     opacity: 0;
     top: 0px;
@@ -1003,14 +1015,14 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
       margin-bottom: 1.2rem; }
     .flip > .front p,
     .flip > .back p {
-      font-size: 0.8rem;
-      line-height: 1.2;
+      font-size: 0.72rem;
+      line-height: 1.1;
       color: white;
       font-weight: 100;
       margin-bottom: 1rem; }
       .flip > .front p span,
       .flip > .back p span {
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight: 700; }
     .flip > .front img,
     .flip > .back img {
