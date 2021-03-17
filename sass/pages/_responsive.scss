@@ -250,6 +250,56 @@
       border-radius: 5px;
     }
   }
+  .prize{
+    &__card{
+      figure.snip1104{
+        width: 20rem;
+        height: 12rem;
+        img{
+          display: none;
+        }
+      }
+      figure.snip1104:before{
+        left:-8%;
+        width: 125%;
+      }
+      .beginner{
+        font-size: 1.5rem;
+      }
+      .beginner span:nth-child(2){
+        font-size: 2rem;
+      }
+    }
+    &__container{
+      .flip{
+        width: 20rem;
+        .teda_hai{
+          margin-top: 2.2rem !important;
+        }
+        .back{
+          p{
+            font-size: 1.5rem;
+            span{
+              font-size: 1.6rem;
+            }
+          }
+          
+        }
+        
+        .front,.back{
+          height: 22rem;
+        }
+      }
+      .flip:first-child{
+        .back{
+          p{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+    
+  }
 }
 @media only screen and (max-width:480px){
   .sponsor{

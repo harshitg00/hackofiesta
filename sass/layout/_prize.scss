@@ -21,6 +21,7 @@
     width: 85%;
     display: flex;
     flex-wrap: wrap;
+    gap:1rem;
     justify-content: center;
     @include marginCenter;
     margin-top: 2rem;
@@ -103,6 +104,12 @@
 
     figure.snip1104 h2 span {
       font-weight: 800;
+    }
+    .beginner{
+      font-size: 1.2rem;
+    }
+    .beginner span:nth-child(2){
+      font-size: 2rem;
     }
 
     figure.snip1104:before {
@@ -234,7 +241,6 @@
 .flip {
   position: relative;
   display: inline-block;
-  margin-right: 2rem;
   margin-bottom: 1em;
   width: 14rem;
   > .front,
