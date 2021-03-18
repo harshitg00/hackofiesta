@@ -1233,15 +1233,14 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .team__row, .sponsor__row {
   display: flex;
   justify-content: center;
+  gap: 1rem;
   flex-wrap: wrap;
-  overflow: hidden;
   padding-bottom: 1.2rem; }
 
 .team__row2, .sponsor__row2 {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  overflow: hidden;
   padding-bottom: 1.2rem; }
 
 .team__column, .sponsor__column {

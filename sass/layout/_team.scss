@@ -49,15 +49,14 @@
     &__row{
         display: flex;
         justify-content: center;
+        gap: 1rem;
         flex-wrap: wrap;
-        overflow: hidden;
         padding-bottom: 1.2rem;
     }
     &__row2{
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        overflow: hidden;
         padding-bottom: 1.2rem;
     }
     &__column{
