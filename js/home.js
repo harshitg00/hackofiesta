@@ -161,9 +161,6 @@ hamburger = (event) => {
 	document.querySelector('html').classList.toggle('stop-scrolling');
 }
 
-
-
-
 // function hideLoader(){
 // 	document.querySelector('#loading').style.display = "none";
 // }
