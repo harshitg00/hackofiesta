@@ -107,20 +107,21 @@ h3, h4 {
   src: url("./../../css/stargaze/Stargaze Regular.otf"); }
 
 .cta-button-hero {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #3770FF;
   font-size: 1.2rem;
   padding: 0.3rem 2rem;
   height: 44px;
   width: 212px;
   color: #fff;
-  outline: none;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   text-decoration: none;
-  box-shadow: 5px 5px 1rem var(--color-textShadow-2);
   transition: all 0.3s; }
+  .cta-button-hero img {
+    height: 120% !important; }
   .cta-button-hero:hover {
     transform: scale(1.03);
     box-shadow: 0px 0px 1rem var(--color-textShadow-2); }
@@ -609,6 +610,7 @@ button.fancy {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
+  gap: 1rem;
   margin: 2rem auto; }
 
 .home__scroll {
@@ -1804,18 +1806,18 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
       padding: 0 0 0;
       text-align: right; }
   .home__button {
-    width: 60%;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
     position: absolute;
-    bottom: 20vh;
-    left: 50%;
-    transform: translateX(-50%); }
-    .home__button > * {
-      margin: 0.5rem 1rem; }
+    bottom: 15vh; }
     .home__button .cta-button-hero {
       text-align: center;
       display: block;
-      width: 80vw;
       font-size: 1.8rem; }
+    .home__button img {
+      height: 108% !important;
+      width: 80% !important; }
   .home__scroll i {
     width: 1rem;
     top: 95%; }
@@ -1939,7 +1941,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   .prize__container .flip {
     width: 20rem; }
     .prize__container .flip .teda_hai {
-      margin-top: 2.2rem !important; }
+      margin-top: 2.2rem !important;
+      font-size: 2rem !important;
+      line-height: unset; }
     .prize__container .flip .back p {
       font-size: 1.5rem; }
       .prize__container .flip .back p span {

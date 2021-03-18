@@ -1,6 +1,7 @@
 .cta-button {
 
     &-hero {
+        font-family: Arial, Helvetica, sans-serif;
         background-color:#3770FF;
         // background: rgba(40,199,250,1);
         // background: linear-gradient(45deg, rgb(28, 158, 184) 0%, rgba(40,199,250,1) 9%, rgba(40,161,193,1) 9%, rgba(40,166,201,1) 20%, rgba(40,199,250,1) 20%, rgba(40,178,219,1) 29%, rgba(40,173,211,1) 30%, rgba(39,152,179,1) 88%, rgba(40,199,250,1) 88%);
@@ -8,17 +9,18 @@
         padding: 0.3rem 2rem;
         height: 44px; width: 212px;
         color: $color-white;
-        outline: none;
         display: flex;
         justify-content: center;
         align-items: center;
         border-radius: 5px;
         text-decoration: none;
-        box-shadow: 5px 5px 1rem var(--color-textShadow-2);
+        // box-shadow: 5px 5px 1rem var(--color-textShadow-2);
         transition: all 0.3s;
         // border-radius: 0.5rem;
         // background-color: $color-grey-dark;
-
+        img{
+            height: 120% !important;
+        }
         &:hover{
             transform: scale(1.03);
             box-shadow: 0px 0px 1rem var(--color-textShadow-2);

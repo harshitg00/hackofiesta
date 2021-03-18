@@ -37,21 +37,22 @@
       }
     }
     &__button {
-      width: 60%;
+      flex-direction: column;
+      gap: 1.5rem;
+      width: 100%;
       position: absolute;
-      bottom: 20vh;
-      left: 50%;
-      transform: translateX(-50%);
-      & > * {
-        margin: 0.5rem 1rem;
-      }
+      bottom: 15vh;
       .cta-button {
         &-hero {
           text-align: center;
           display: block;
-          width: 80vw;
           font-size: 1.8rem;
         }
+        
+      }
+      img{
+        height: 108% !important;
+        width: 80% !important;
       }
     }
     &__scroll {
@@ -275,6 +276,8 @@
         width: 20rem;
         .teda_hai{
           margin-top: 2.2rem !important;
+          font-size: 2rem !important;
+          line-height: unset;
         }
         .back{
           p{
