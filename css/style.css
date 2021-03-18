@@ -1055,11 +1055,22 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   text-align: center; }
 
 .speaker__container {
+  margin-bottom: 3rem;
   width: 70%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly; }
+  .speaker__container .teda_hai {
+    display: inline-block;
+    background: #0a212f;
+    -webkit-transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    transform: skew(-10deg) rotate(-10deg) translate(0, -50%);
+    padding: 12px 5px;
+    width: 15rem;
+    margin-top: 3rem;
+    font-size: 1.8rem;
+    font-weight: 400; }
   .speaker__container--card {
     width: 15.5rem;
     height: 8rem;
