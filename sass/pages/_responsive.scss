@@ -236,11 +236,14 @@
     }
   }
   .sponsor{
-    // &__row{
-    //   h2{
-    //     text-align: center;
-    //   }
-    // }
+    &--section{
+      .cta-button2{
+        a{
+          width: 20rem;
+          font-size: 1.3rem;
+        }
+      }
+    }
     &__card{
       height: 7rem;
       width: fit-content;
@@ -250,6 +253,7 @@
       // background-color: white;
       border-radius: 5px;
     }
+    
   }
   .prize{
     &__card{

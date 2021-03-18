@@ -1929,6 +1929,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
       font-size: 1.2rem; }
   .team__card--links a, .sponsor__card--links a {
     font-size: 2.26rem; }
+  .sponsor--section .cta-button2 a {
+    width: 20rem;
+    font-size: 1.3rem; }
   .sponsor__card {
     height: 7rem;
     width: fit-content;
