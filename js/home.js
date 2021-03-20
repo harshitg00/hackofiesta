@@ -58,7 +58,7 @@ var fullAnimation = (function() {
 	function init() {
 	  setTimeout(function() {
 		bigDarkRectangle.play()
-	  }, 1000)
+	  }, 400)
 	}
   
 	function restart() {
@@ -118,7 +118,7 @@ let trans = () => {
 	document.documentElement.classList.add('transition');
 	window.setTimeout(() => {
 		document.documentElement.classList.remove('transition')
-	}, 10)
+	}, 1000)
 }
 
 
