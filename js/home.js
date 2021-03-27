@@ -83,8 +83,7 @@ var fullAnimation = (function() {
   // Start on load
 window.onload = function() {
 	fullAnimation.init();
-	// hideLoader();
-
+	hideLoader();
 }
 
 // // Re-run
@@ -161,6 +160,20 @@ hamburger = (event) => {
 	document.querySelector('html').classList.toggle('stop-scrolling');
 }
 
-// function hideLoader(){
-// 	document.querySelector('#loading').style.display = "none";
-// }
+function hideLoader(){
+	let preloader = document.querySelector('#loading');
+	x = 0.01;
+	const fadeEffect = setInterval(() => {
+		if (!preloader.style.opacity) {
+		  preloader.style.opacity = 1;
+		}
+		if (preloader.style.opacity >= 0.1) {
+			x *= 2;
+		  	preloader.style.opacity -= x;
+		} else {
+			preloader.style.opacity = 0;
+			preloader.style.display = 'none';
+		  	clearInterval(fadeEffect);
+		}
+	  }, 50);
+}

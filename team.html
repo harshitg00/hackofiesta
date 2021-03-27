@@ -27,7 +27,7 @@
 
     <script src="https://kit.fontawesome.com/3ea20092d3.js" crossorigin="anonymous"></script>
     
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">  
+	  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap" rel="stylesheet">  
 
 
 
@@ -46,7 +46,13 @@
 	</noscript>
 		<!-- End Google Tag Manager (noscript) -->
 
-
+    <div id="loading">
+      <div class='cssload-loader'>
+        <div class='cssload-inner cssload-one'></div>
+        <div class='cssload-inner cssload-two'></div>
+        <div class='cssload-inner cssload-three'></div>
+      </div>
+    </div>
 
 
     <img style="size: 100%; position: absolute; z-index: -1; background-size: contain;" src="./img/confettin-bg-2.svg" alt="">
@@ -483,6 +489,26 @@
       document.querySelector('.btn-hamburger').classList.toggle('open');
       document.querySelector('.menu').classList.toggle('menu--open');
       document.querySelector('html').classList.toggle('stop-scrolling');
+    }
+    window.onload = function() {
+      hideLoader();
+    }
+    function hideLoader(){
+      let preloader = document.querySelector('#loading');
+      x = 0.01;
+      const fadeEffect = setInterval(() => {
+        if (!preloader.style.opacity) {
+          preloader.style.opacity = 1;
+        }
+        if (preloader.style.opacity >= 0.1) {
+          x *= 2;
+            preloader.style.opacity -= x;
+        } else {
+          preloader.style.opacity = 0;
+          preloader.style.display = 'none';
+            clearInterval(fadeEffect);
+        }
+      }, 50);
     }
   </script>
 </html>
