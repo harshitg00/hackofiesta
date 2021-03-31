@@ -1286,6 +1286,13 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   border-radius: 5px; }
   .sponsor__card img {
     width: 16rem; }
+  .sponsor__card.noback {
+    background-color: transparent;
+    width: fit-content;
+    margin-top: 2rem; }
+    .sponsor__card.noback img {
+      width: 8rem;
+      border-radius: 5px; }
 
 .team__heading {
   margin-bottom: 3rem !important;
@@ -1294,6 +1301,74 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 @media only screen and (max-width: 768px) {
   html {
     font-size: 12px !important; } }
+
+.statistic-section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background: #00c6ff;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
+  background: linear-gradient(to right, #0072ff, #00c6ff); }
+  .statistic-section .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+  .statistic-section .text-center {
+    text-align: center !important; }
+  .statistic-section .col-xs-12 {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .statistic-section .count-title {
+    font-size: 50px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #fff; }
+  .statistic-section .stats-text {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .statistic-section .stats-line-black {
+    margin: 12px auto 0;
+    width: 55px;
+    height: 2px;
+    background-color: #fff; }
+  .statistic-section .stats-icon {
+    font-size: 35px;
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #fff; }
+  .statistic-section .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .statistic-section .fa-2x {
+    font-size: 2em; }
+
+@media (max-width: 992px) {
+  .counter {
+    margin-bottom: 40px; }
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; } }
 
 .theme__item {
   align-items: center;
@@ -1916,6 +1991,10 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     min-width: 20rem;
     padding: 0 2rem;
     border-radius: 5px; }
+    .sponsor__card.noback {
+      min-width: unset;
+      padding: unset;
+      margin-top: 1rem; }
   .prize__card figure.snip1104 {
     width: 20rem;
     height: 12rem; }

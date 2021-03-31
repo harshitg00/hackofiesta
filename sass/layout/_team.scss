@@ -90,6 +90,7 @@
             }
         }
 
+        
         &-details{
             margin: 1rem;
 
@@ -137,6 +138,15 @@
         border-radius: 5px;
         img{
             width: 16rem;
+        }
+        &.noback{
+            background-color: transparent;
+            width: fit-content;
+            margin-top: 2rem;
+            img{
+                width: 8rem;
+                border-radius: 5px;
+            }
         }
     }
 }

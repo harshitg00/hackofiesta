@@ -250,8 +250,12 @@
       max-width: 25rem;
       min-width: 20rem;
       padding: 0 2rem;
-      // background-color: white;
       border-radius: 5px;
+      &.noback{
+        min-width: unset;
+        padding: unset;
+        margin-top: 1rem;
+      }
     }
     
   }
