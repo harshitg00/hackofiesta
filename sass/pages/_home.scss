@@ -6,75 +6,74 @@
 }
 
 .about {
+    &-section {
+        position: relative;
+        // height: 100vh;
 
-&-section {
-    position: relative;
-    // height: 100vh;
-
-    clip-path: polygon(0% 0%,100% 10%,100% 100%,0% 90%);
-    transform:scaleZ(1);
-    // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+        clip-path: polygon(0% 0%,100% 10%,100% 100%,0% 90%);
+        transform:scaleZ(1);
+        // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
 
-    width: 100vw;
-    background-color: #e5eeff;
-    margin-top: 4rem;
-    margin-bottom: 1rem;
+        width: 100vw;
+        background-color: #e5eeff;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
 
-    text-align: center;
+        text-align: center;
 
-    h1{
-    margin-top: 4rem;
-    margin-bottom: 0;
+        h1{
+        margin-top: 4rem;
+        margin-bottom: 0;
+        }
     }
 
-}
 
-&__container {
-    position: relative;
-    width: 70%;
-    @include marginCenter;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 2rem;
+    &__container {
+        position: relative;
+        width: 70%;
+        @include marginCenter;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 2rem;
 
-    &--text {
-    width: 80%;
-    margin:0 2rem ;
-    text-align: center;
-    font-family: 'Assistant';
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 4rem;
-    color: #51555E;
+        &--text {
+            width: 80%;
+            margin:0 2rem ;
+            text-align: center;
+            font-family: 'Assistant';
+            font-size: 1.1rem;
+            font-weight: 600;
+            // margin-bottom: 4rem;
+            color: #51555E;
 
-    p{    
-        margin-bottom: 4rem;
+            p{  
+                margin-bottom: 0;
+            }
+        }
     }
 
+    &__img{
+        // flex-grow: 20%;
+        height: 15rem;
+
+        img{
+        width: 10rem;
+        height: 100%;
+        }
     }
-}
 
-&__img{
-    // flex-grow: 20%;
-    height: 15rem;
-
-    img{
-    width: 10rem;
-    height: 100%;
-    }
-}
-
-&__background{
-    position: absolute;
-    top: 0%;
-    left: 72%;
-    height: 50rem;
-    width: 50rem;
-    opacity: 0.6;
-    filter: grayscale(0%);
+    &__background{
+        position: absolute;
+        top: 0%;
+        left: 72%;
+        height: 50rem;
+        width: 50rem;
+        opacity: 0.6;
+        filter: grayscale(0%);
 
         img{
             height: 50rem;
@@ -118,4 +117,86 @@
     }
 }
 
-
+$counter-color: #51555E;
+.statistic-section {
+    padding-bottom: 6rem;
+    width: 100%;
+    .container{
+        padding: 1rem;
+        border: 6px solid;
+    }
+    .row{
+       display: -ms-flexbox;
+       display: flex;
+       -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+       margin-right: -15px;
+       margin-left: -15px;
+    }
+    .text-center {
+       text-align: center!important;
+    }
+    .col-xs-12{
+       position: relative;
+       width: 25%;
+       min-height: 1px;
+       padding-right: 15px;
+       padding-left: 15px;
+    }
+    .count-title {
+       font-size: 50px;
+       font-weight: normal;
+       margin-top: 10px;
+       margin-bottom: 0;
+       text-align: center;
+       font-weight: bold;
+       color: $counter-color;
+    }
+ 
+    .stats-text {
+       font-size: 15px;
+       font-weight: normal;
+       margin-top: 15px;
+       margin-bottom: 0;
+       text-align: center;
+       color: $counter-color;
+       text-transform: uppercase;
+       font-weight: bold;
+    }
+ 
+    .stats-line-black {
+       margin: 12px auto 0;
+       width: 55px;
+       height: 2px;
+       background-color: $counter-color;
+    }
+    .stats-icon {
+       font-size: 35px;
+       margin: 0 auto;
+       float: none;
+       display: table;
+       color: $counter-color;
+    }
+    .fa {
+       display: inline-block;
+       font: normal normal normal 14px/1 FontAwesome;
+       font-size: inherit;
+       text-rendering: auto;
+       -webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale;
+    }
+    .fa-2x {
+       font-size: 2em;
+    }
+ }
+ 
+@media (max-width: 992px) {
+    .counter {
+        margin-bottom: 40px;
+    }
+    .col-md-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}

@@ -321,7 +321,7 @@
 				<img src="./img/Anti Grvty _ Creative Digital Lab Focused on Creating Unique Human Experience.-1.svg" alt="">
 			</div>
 			<div class="about__container">
-				<div class="about__img">
+				<div hidden class="about__img">
 					<!-- <img src="./img/f5818e0c21d5a730a000e8c200a09117.jpg" alt=""> -->
 				</div>
 				
@@ -333,6 +333,45 @@
 
 					</p>
 				</div>
+				<br>
+				<div id="statistic" class="statistic-section one-page-section">
+					<div hidden class="container">
+						<div class="row text-center">
+							<div class="col-xs-12 col-md-3">
+								<div class="counter">
+									<i class="fa fa-coffee fa-2x stats-icon"></i>
+									<h2 class="timer count-title count-number" data-count="9000">0</h2>
+									<div class="stats-line-black"></div>
+									<p class="stats-text">Coffee Cups</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-3">
+								<div class="counter">
+									<i class="fa fa-code fa-2x stats-icon"></i>
+									<h2 class="timer count-title count-number" data-count="9000">0</h2>
+									<div class="stats-line-black"></div>
+									<p class="stats-text">Participants</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-3">
+								<div class="counter">
+									<i class="fa fa-clock-o fa-2x stats-icon"></i>
+									<h2 class="timer count-title count-number" data-count="100">0</h2>
+									<div class="stats-line-black"></div>
+									<p class="stats-text">Projects</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-md-3">
+								<div class="counter">
+									<i class="fa fa-laptop fa-2x stats-icon"></i>
+									<h2 class="timer count-title count-number" data-count="9000">0</h2>
+									<div class="stats-line-black"></div>
+									<p class="stats-text">Speakers</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<!-- <div class="about__footerImg">
@@ -343,47 +382,9 @@
 				</div>    
 			</div> -->
 			
-
 		</section>
-		<!-- <section id="statistic" class="statistic-section one-page-section">
-			<div class="container">
-				<div class="row text-center">
-					<div class="col-xs-12 col-md-3">
-						<div class="counter">
-							<i class="fa fa-coffee fa-2x stats-icon"></i>
-							<h2 class="timer count-title count-number">999</h2>
-							<div class="stats-line-black"></div>
-							<p class="stats-text">Coffee Cups</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-3">
-						<div class="counter">
-							<i class="fa fa-code fa-2x stats-icon"></i>
-							<h2 class="timer count-title count-number">10000
-							</h2>
-							<div class="stats-line-black"></div>
-							<p class="stats-text">Line Code</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-3">
-						<div class="counter">
-							<i class="fa fa-clock-o fa-2x stats-icon"></i>
-							<h2 class="timer count-title count-number">6</h2>
-							<div class="stats-line-black"></div>
-							<p class="stats-text">Years Experience</p>
-						</div>
-					</div>
-					<div class="col-xs-12 col-md-3">
-						<div class="counter">
-							<i class="fa fa-laptop fa-2x stats-icon"></i>
-							<h2 class="timer count-title count-number">12</h2>
-							<div class="stats-line-black"></div>
-							<p class="stats-text">Project</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section> -->
+		
+		
 	
 
 		<section id="theme" class="theme--section">
@@ -980,6 +981,16 @@
 							<img src="./img/sponsor/repl.svg" alt="">
 						</div>
 					</a>
+					<a href="https://yocket.in/" target="_blank">
+						<div class="sponsor__card">
+							<img src="./img/sponsor/yocket.png" style="height:90%" alt="">
+						</div>
+					</a>
+					<a href="https://1password.com/" target="_blank">
+						<div class="sponsor__card" style="background: white;">
+							<img src="./img/sponsor/1P-wordmark-68px-tall.png" alt="">
+						</div>
+					</a>
 					<a href="https://rstudio.com/" target="_blank">
 						<div class="sponsor__card" style="background: white;">
 							<img src="./img/sponsor/RStudio-Logo-Flat.png" style="width: 70%;"alt="">
@@ -1013,6 +1024,11 @@
 					<a href="https://thegirlcode.co/" target="_blank">
 						<div class="sponsor__card noback">
 							<img src="./img/sponsor/the-girl-code.png" alt="">
+						</div>
+					</a>
+					<a href="https://bchaindynamics.in/" target="_blank">
+						<div class="sponsor__card noback">
+							<img src="./img/sponsor/BChain Dynamics Logo White.png" alt="" >
 						</div>
 					</a>
 				</div>
@@ -1151,9 +1167,33 @@
 			//go to " http://momentjs.com/timezone/ " to get timezone
 		});
 		$(document).ready(function($) {
-			$('.count-number').counterUp({
-				delay: 10,
-				time: 1000
+			// $('.count-number').counterUp({
+			// 	delay: 10,
+			// 	time: 1000
+			// });
+			$('.count-number').each(function() {
+				var $this = $(this),
+					countTo = $this.attr('data-count');
+				
+				$({ countNum: $this.text()}).animate({
+					countNum: countTo
+				},
+
+				{
+
+					duration: 5000,
+					easing:'linear',
+					step: function() {
+					$this.text(Math.floor(this.countNum));
+					},
+					complete: function() {
+					$this.text(this.countNum);
+					//alert('finished');
+					}
+
+				});
+			
+
 			});
 		});
 	</script>

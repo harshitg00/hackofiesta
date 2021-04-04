@@ -1302,74 +1302,6 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   html {
     font-size: 12px !important; } }
 
-.statistic-section {
-  padding-top: 70px;
-  padding-bottom: 70px;
-  background: #00c6ff;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);
-  background: linear-gradient(to right, #0072ff, #00c6ff); }
-  .statistic-section .row {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px; }
-  .statistic-section .text-center {
-    text-align: center !important; }
-  .statistic-section .col-xs-12 {
-    position: relative;
-    width: 100%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px; }
-  .statistic-section .count-title {
-    font-size: 50px;
-    font-weight: normal;
-    margin-top: 10px;
-    margin-bottom: 0;
-    text-align: center;
-    font-weight: bold;
-    color: #fff; }
-  .statistic-section .stats-text {
-    font-size: 15px;
-    font-weight: normal;
-    margin-top: 15px;
-    margin-bottom: 0;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: bold; }
-  .statistic-section .stats-line-black {
-    margin: 12px auto 0;
-    width: 55px;
-    height: 2px;
-    background-color: #fff; }
-  .statistic-section .stats-icon {
-    font-size: 35px;
-    margin: 0 auto;
-    float: none;
-    display: table;
-    color: #fff; }
-  .statistic-section .fa {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; }
-  .statistic-section .fa-2x {
-    font-size: 2em; }
-
-@media (max-width: 992px) {
-  .counter {
-    margin-bottom: 40px; }
-  .col-md-3 {
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%; } }
-
 .theme__item {
   align-items: center;
   background-color: #fff;
@@ -1788,6 +1720,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   margin: 0 auto;
   text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 2rem; }
@@ -1798,10 +1731,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     font-family: 'Assistant';
     font-size: 1.1rem;
     font-weight: 600;
-    margin-bottom: 4rem;
     color: #51555E; }
     .about__container--text p {
-      margin-bottom: 4rem; }
+      margin-bottom: 0; }
 
 .about__img {
   height: 15rem; }
@@ -1839,6 +1771,73 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     margin: 1rem; }
     .theme__container--card--2 {
       flex-grow: 20%; }
+
+.statistic-section {
+  padding-bottom: 6rem;
+  width: 100%; }
+  .statistic-section .container {
+    padding: 1rem;
+    border: 6px solid; }
+  .statistic-section .row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px; }
+  .statistic-section .text-center {
+    text-align: center !important; }
+  .statistic-section .col-xs-12 {
+    position: relative;
+    width: 25%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px; }
+  .statistic-section .count-title {
+    font-size: 50px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: bold;
+    color: #51555E; }
+  .statistic-section .stats-text {
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #51555E;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .statistic-section .stats-line-black {
+    margin: 12px auto 0;
+    width: 55px;
+    height: 2px;
+    background-color: #51555E; }
+  .statistic-section .stats-icon {
+    font-size: 35px;
+    margin: 0 auto;
+    float: none;
+    display: table;
+    color: #51555E; }
+  .statistic-section .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; }
+  .statistic-section .fa-2x {
+    font-size: 2em; }
+
+@media (max-width: 992px) {
+  .counter {
+    margin-bottom: 40px; }
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%; } }
 
 .nav-respo {
   display: none; }
