@@ -1289,7 +1289,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   .sponsor__card.noback {
     background-color: transparent;
     width: fit-content;
-    margin-top: 2rem; }
+    margin-top: 2rem;
+    height: 8rem; }
     .sponsor__card.noback img {
       width: 8rem;
       border-radius: 5px; }
