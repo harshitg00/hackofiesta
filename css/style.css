@@ -949,7 +949,9 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   position: relative; }
   .flip > .front,
   .flip > .back {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition-duration: 1s;
     transition-property: transform, opacity; }
@@ -982,18 +984,19 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   width: 14rem; }
   .flip > .front,
   .flip > .back {
-    display: block;
+    display: flex;
     color: white;
     width: inherit;
     background-size: cover !important;
     background-position: center !important;
     height: 16rem;
-    padding: 1em 2em;
+    padding: 1em 1em;
     background: #123851;
     border-radius: 10px; }
     .flip > .front h1,
     .flip > .back h1 {
-      margin-top: 1rem;
+      text-align: center;
+      margin-top: 0rem;
       margin-bottom: 1.2rem; }
     .flip > .front p,
     .flip > .back p {
@@ -1008,6 +1011,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
         font-weight: 700; }
     .flip > .front img,
     .flip > .back img {
+      width: 90%;
       -webkit-filter: drop-shadow(5px 5px 5px #222);
       filter: drop-shadow(5px 5px 5px #222); }
   .flip .teda_hai {
@@ -1994,6 +1998,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
       min-width: unset;
       padding: unset;
       margin-top: 1rem; }
+  .prize--section {
+    margin-top: 0rem; }
   .prize__card figure.snip1104 {
     width: 20rem;
     height: 12rem; }
@@ -2007,19 +2013,21 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   .prize__card .beginner span:nth-child(2) {
     font-size: 2rem; }
   .prize__container .flip {
-    width: 20rem; }
+    width: 22rem; }
     .prize__container .flip .teda_hai {
       margin-top: 2.2rem !important;
       font-size: 2rem !important;
       line-height: unset; }
     .prize__container .flip .back p {
-      font-size: 1.5rem; }
+      font-size: 1.25rem; }
       .prize__container .flip .back p span {
-        font-size: 1.6rem; }
+        font-size: 1.4rem; }
     .prize__container .flip .front, .prize__container .flip .back {
-      height: 22rem; }
+      height: 24rem; }
   .prize__container .flip:first-child .back p {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .new_footer_top {
+    padding: 10px 0px 200px; } }
 
 @media only screen and (max-width: 480px) {
   .sponsor__card {

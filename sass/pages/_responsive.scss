@@ -260,6 +260,9 @@
     
   }
   .prize{
+    &--section{
+      margin-top: 0rem;
+    }
     &__card{
       figure.snip1104{
         width: 20rem;
@@ -281,7 +284,7 @@
     }
     &__container{
       .flip{
-        width: 20rem;
+        width: 22rem;
         .teda_hai{
           margin-top: 2.2rem !important;
           font-size: 2rem !important;
@@ -289,16 +292,16 @@
         }
         .back{
           p{
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             span{
-              font-size: 1.6rem;
+              font-size: 1.4rem;
             }
           }
           
         }
         
         .front,.back{
-          height: 22rem;
+          height: 24rem;
         }
       }
       .flip:first-child{
@@ -309,7 +312,9 @@
         }
       }
     }
-    
+  }
+  .new_footer_top{
+    padding: 10px 0px 200px;
   }
 }
 @media only screen and (max-width:480px){
