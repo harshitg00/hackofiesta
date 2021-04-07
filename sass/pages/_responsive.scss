@@ -302,6 +302,9 @@
         
         .front,.back{
           height: 24rem;
+          img{
+            margin-left: 1rem;
+          }
         }
       }
       .flip:first-child{

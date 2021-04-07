@@ -2024,6 +2024,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
         font-size: 1.4rem; }
     .prize__container .flip .front, .prize__container .flip .back {
       height: 24rem; }
+      .prize__container .flip .front img, .prize__container .flip .back img {
+        margin-left: 1rem; }
   .prize__container .flip:first-child .back p {
     font-size: 1.2rem; }
   .new_footer_top {
