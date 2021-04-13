@@ -1052,11 +1052,11 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     font-size: 1.8rem;
     font-weight: 400; }
   .speaker__container--card {
-    width: 15.5rem;
+    width: 20rem;
     height: 8rem;
     margin: 0.7rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 1.1rem; }
     .speaker__container--card h3 {
@@ -1065,13 +1065,15 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
       font-size: 0.5rem; }
 
 .speaker__img {
-  height: 6rem;
-  width: 6rem; }
+  height: 7rem;
+  width: 7rem;
+  overflow: hidden;
+  margin: 1rem; }
   .speaker__img img {
     border-radius: 50%;
-    height: 6rem;
-    width: 6rem;
-    background-color: #f7bf77; }
+    height: 7rem;
+    width: 100%;
+    overflow: hidden; }
 
 .speaker__details {
   text-align: left;
@@ -1085,7 +1087,8 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
     color: #fff;
     color: var(--color-heading) !important;
     font-size: 0.7rem;
-    margin: -0.2rem 0 0 0; }
+    line-height: 1;
+    margin: 0.3rem 0 0 0; }
 
 .speaker__links {
   display: flex;
@@ -1094,11 +1097,18 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   text-align: center; }
 
 .speaker__link {
-  height: 1rem;
-  width: 1rem;
-  background-color: var(--color-heading);
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 50%;
-  margin: 0.1rem 0.5rem 0 0; }
+  margin: 0.3rem 0.5rem 0 0; }
+  .speaker__link a {
+    text-decoration: none;
+    margin: 0.15rem;
+    color: var(--color-link-speaker);
+    transition: all 0.3s; }
+    .speaker__link a:hover {
+      transform: scale(1.1); }
 
 .faq__container {
   margin: 0 auto;
