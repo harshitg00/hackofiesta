@@ -2039,7 +2039,18 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
   .prize__container .flip:first-child .back p {
     font-size: 1.2rem; }
   .new_footer_top {
-    padding: 10px 0px 200px; } }
+    padding: 10px 0px 200px; }
+  .speaker__container {
+    width: 100%; }
+  .speaker__img {
+    overflow: unset; }
+    .speaker__img img {
+      width: 7rem;
+      max-width: unset; }
+  .speaker__details h4 {
+    margin: 0; }
+  .speaker__link a {
+    font-size: 1.8rem; } }
 
 @media only screen and (max-width: 480px) {
   .sponsor__card {
